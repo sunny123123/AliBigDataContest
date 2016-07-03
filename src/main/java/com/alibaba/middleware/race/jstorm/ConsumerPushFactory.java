@@ -10,7 +10,7 @@ import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;
 public class ConsumerPushFactory {
 	public static DefaultMQPushConsumer getConsumer(MessageListenerConcurrently listener){
 		DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(RaceConfig.MetaConsumerGroup);
-		consumer.setNamesrvAddr(RaceConfig.MQNameServerAddr);
+		//consumer.setNamesrvAddr(RaceConfig.MQNameServerAddr);
 		consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 		consumer.registerMessageListener(listener);
 		try {
