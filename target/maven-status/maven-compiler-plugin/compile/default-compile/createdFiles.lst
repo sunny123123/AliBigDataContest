@@ -4,9 +4,13 @@ com/alibaba/middleware/race/jstorm/ReadSpout$SubscribleTopic.class
 com/alibaba/middleware/race/model/OrderMessage.class
 com/alibaba/middleware/race/jstorm/RaceTopology.class
 com/alibaba/middleware/race/model/TableItemFactory.class
+com/alibaba/middleware/race/Tair/TairManageFactory.class
 com/alibaba/middleware/race/jstorm/RaceBolt.class
 com/alibaba/middleware/race/model/OrderStream.class
+com/alibaba/middleware/race/Tair/TairOperatorImpl.class
 com/alibaba/middleware/race/RaceConfig.class
-com/alibaba/middleware/race/jstorm/ConsumerPushFactory.class
 com/alibaba/middleware/race/model/PaymentMessage.class
+com/alibaba/middleware/race/jstorm/ConsumerPushFactory.class
+com/alibaba/middleware/race/Tair/Demo.class
+com/alibaba/middleware/race/jstorm/RaceBolt$QueueThread.class
 com/alibaba/middleware/race/model/PaymentStream.class

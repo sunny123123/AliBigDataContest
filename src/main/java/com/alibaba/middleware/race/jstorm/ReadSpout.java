@@ -3,6 +3,7 @@ package com.alibaba.middleware.race.jstorm;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,7 +33,9 @@ public class ReadSpout implements IRichSpout,MessageListenerConcurrently{
 	Logger LOG = LoggerFactory.getLogger(ReadSpout.class); 
 	
 	SpoutOutputCollector collector;
-	
+	AtomicInteger tmallOrderNum = new AtomicInteger(0);
+	AtomicInteger taobaoOrderNum = new AtomicInteger(0);
+	AtomicInteger payOrderNum = new AtomicInteger(0);
 	LinkedBlockingQueue<OrderStream> orderQueue = new LinkedBlockingQueue<OrderStream>();
 	LinkedBlockingQueue<PaymentStream> paymentQueue = new LinkedBlockingQueue<PaymentStream>();
 	public void declareOutputFields(OutputFieldsDeclarer declarer) {
@@ -121,6 +124,7 @@ public class ReadSpout implements IRichSpout,MessageListenerConcurrently{
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
+	            LOG.info("TMALLORDER:"+String.valueOf(tmallOrderNum.getAndIncrement()+1));
 	            LOG.info("panzha:tmallorder received from mq"+msg.getKeys()+" "+msg.getMsgId()+" "+tmallOrder.toString());
 	            //System.out.println(tmallOrder);
 				break;
@@ -137,6 +141,7 @@ public class ReadSpout implements IRichSpout,MessageListenerConcurrently{
 					e.printStackTrace();
 				}
 				 //System.out.println(taobaoOrder);
+				 LOG.info("TAOBAOORDER:"+String.valueOf(taobaoOrderNum.getAndIncrement()+1));
 				 LOG.info("panzha:taobaoorder received from mq"+msg.getKeys()+" "+msg.getMsgId()+" "+taobaoOrder.toString());
 				break;
 			case RaceConfig.MqPayTopic:
@@ -153,6 +158,7 @@ public class ReadSpout implements IRichSpout,MessageListenerConcurrently{
 					e.printStackTrace();
 				}
 				 //System.out.println(pay);
+				  LOG.info("PAYMENT:"+String.valueOf(payOrderNum.getAndIncrement()+1));
 				 LOG.info("panzha:payment received from mq"+msg.getKeys()+" "+msg.getMsgId()+" "+pay.toString());
 				break;
 			default:
