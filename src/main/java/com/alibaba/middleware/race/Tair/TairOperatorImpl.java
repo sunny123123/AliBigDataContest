@@ -1,11 +1,13 @@
 package com.alibaba.middleware.race.Tair;
 
 import java.io.Serializable;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alibaba.middleware.race.RaceConfig;
+import com.sunny.utils.OperateFile;
 import com.taobao.tair.DataEntry;
 import com.taobao.tair.Result;
 import com.taobao.tair.ResultCode;
@@ -18,6 +20,7 @@ import com.taobao.tair.impl.DefaultTairManager;
  */
 public class TairOperatorImpl {
 	Logger LOG = LoggerFactory.getLogger(TairOperatorImpl.class); 
+	
 	public TairOperatorImpl(){}
 	
     public TairOperatorImpl(String masterConfigServer,
@@ -77,6 +80,7 @@ public class TairOperatorImpl {
 		DefaultTairManager tairManager = TairManageFactory.getDefaultTairManager();
 		ResultCode rscode = tairManager.put(namespace, key, value);
 		LOG.info("panzha:putOrderToTair "+key+" "+value);
+		//OperateFile.writeToFile(key+" "+value);
 		//System.out.println(rscode);
 	}
     /*
@@ -90,8 +94,10 @@ public class TairOperatorImpl {
 			//System.out.println("data not exit");
 			tairManager.put(namespace, key, value);
 			LOG.info("panzha:putPayTair "+key+" "+value+" not exist,put to tair");
+			//OperateFile.writeToFile(key+" "+value);
 		}
 		else{
+			LOG.info("panzha:putPayTair "+key+" "+value+" exist in tair");
 			if(ResultCode.SUCCESS.equals(rs.getRc())){
 				//System.out.println("data get success");
 				LOG.info("panzha:putPayTair "+key+" "+value+" find in tair");
@@ -105,6 +111,8 @@ public class TairOperatorImpl {
 			}else{
 				//System.out.println(key+" put suceess");
 				LOG.info("panzha:putPayTair "+key+" "+value+" put seccess in tair at first time");
+				//OperateFile.writeToFile(key+" "+value+" first");
+				return ;
 			}
 			
 			while(!ResultCode.SUCCESS.equals(rscode)){
@@ -113,6 +121,7 @@ public class TairOperatorImpl {
 				rscode = tairManager.put(namespace, key, value+val,version);
 			}
 			LOG.info("panzha:putPayTair "+key+" "+value+" update suceess in tair");
+			//OperateFile.writeToFile(key+" "+(value+val)+"update");
 		}
 	}
     //天猫的分钟交易额写入tair

@@ -18,6 +18,7 @@ import com.alibaba.middleware.race.Tair.TairManageFactory;
 import com.alibaba.middleware.race.Tair.TairOperatorImpl;
 import com.alibaba.middleware.race.model.OrderStream;
 import com.alibaba.middleware.race.model.PaymentStream;
+import com.sunny.utils.OperateFile;
 import com.taobao.tair.impl.DefaultTairManager;
 
 public class RaceBolt implements IRichBolt{
@@ -33,9 +34,10 @@ public class RaceBolt implements IRichBolt{
 			while(true){
 				PaymentStream pay = null ;
 				try {
-					Thread.currentThread().sleep(500);
-					LOG.debug("panzha:queueNUM"+paymentQueue.size());
+					//Thread.currentThread().sleep(500);
+					LOG.info("panzha:queueNUM"+paymentQueue.size());
 					pay = paymentQueue.take();
+					OperateFile.writeToFile("put "+pay+" to queue");
 					addTradAmountToTair(pay);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -66,6 +68,7 @@ public class RaceBolt implements IRichBolt{
 		this.tairOP = new TairOperatorImpl();
 		this.paymentQueue = new LinkedBlockingQueue<PaymentStream>();
 		Thread t = new Thread(new QueueThread());
+		OperateFile.writeToFile("thread start");
 		t.start();
 	}
 

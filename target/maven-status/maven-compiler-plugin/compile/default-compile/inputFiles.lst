@@ -6,9 +6,11 @@
 /root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/Tair/TairManageFactory.java
 /root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/model/TableItemFactory.java
 /root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/RaceConfig.java
+/root/workspace/AliBigDataContest/src/main/java/com/sunny/utils/OperateFile.java
 /root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/RaceUtils.java
 /root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/model/OrderMessage.java
-/root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/Tair/Demo.java
 /root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/model/OrderStream.java
+/root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/Tair/Demo.java
 /root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/model/PaymentStream.java
 /root/workspace/AliBigDataContest/src/main/java/com/alibaba/middleware/race/jstorm/RaceTopology.java
+/root/workspace/AliBigDataContest/src/main/java/com/sunny/utils/Test.java
