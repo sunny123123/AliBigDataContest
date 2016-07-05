@@ -34,7 +34,7 @@ public class RaceBolt implements IRichBolt{
 			while(true){
 				PaymentStream pay = null ;
 				try {
-					Thread.currentThread().sleep(20);
+					Thread.currentThread().sleep(1);
 					LOG.info("panzha:queueNUM"+paymentQueue.size());
 					pay = paymentQueue.take();
 					//OperateFile.writeToFile("put "+pay+" to queue");
