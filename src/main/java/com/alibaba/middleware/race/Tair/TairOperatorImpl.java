@@ -80,7 +80,7 @@ public class TairOperatorImpl {
 		DefaultTairManager tairManager = TairManageFactory.getDefaultTairManager();
 		ResultCode rscode = tairManager.put(namespace, key, value);
 		LOG.info("panzha:putOrderToTair "+key+" "+value);
-		//OperateFile.writeToFile(key+" "+value);
+		OperateFile.writeToFile(key+" "+value+" "+rscode.toString());
 		//System.out.println(rscode);
 	}
     /*
@@ -89,39 +89,42 @@ public class TairOperatorImpl {
      */
     public  void updateDataTotair(int namespace,String key,double value){
 		DefaultTairManager tairManager = TairManageFactory.getDefaultTairManager();
-		Result<DataEntry> rs = tairManager.get(1, key);
+		Result<DataEntry> rs = tairManager.get(namespace, key);
+		
+		/*put value not exist,put into tair directly*/
 		if(rs.getRc().equals(ResultCode.DATANOTEXSITS)){
 			//System.out.println("data not exit");
-			tairManager.put(namespace, key, value);
-			LOG.info("panzha:putPayTair "+key+" "+value+" not exist,put to tair");
-			//OperateFile.writeToFile(key+" "+value);
+			ResultCode rscode= tairManager.put(namespace, key, value);
+			//LOG.info("panzha:putPayTair "+key+" "+value+" not exist,put to tair");
+			OperateFile.writeToFile("insert "+key+" "+value +","+"not exist in tair,put into tair,put status:"+rscode.toString());
 		}
 		else{
-			LOG.info("panzha:putPayTair "+key+" "+value+" exist in tair");
-			if(ResultCode.SUCCESS.equals(rs.getRc())){
-				//System.out.println("data get success");
-				LOG.info("panzha:putPayTair "+key+" "+value+" find in tair");
-			}
+			//LOG.info("panzha:putPayTair "+key+" "+value+" exist in tair");
+			
+			/*put value have existed,try to update first*/
 			int version = rs.getValue().getVersion();
 			double val = (double)rs.getValue().getValue();
+			OperateFile.writeToFile(key+" "+value+" exist in tair,get from tair,get status:"+rs.getRc()+",version "+version);
 			ResultCode rscode = tairManager.put(namespace, key, value+val,version);
 			if(!ResultCode.SUCCESS.equals(rscode)){
 				//System.out.println(key+" put failed");
-				LOG.info("panzha:putPayTair "+key+" "+value+" put failed in tair at first time");
+				//LOG.info("panzha:putPayTair "+key+" "+value+" put failed in tair at first time");
+				OperateFile.writeToFile(key+" "+value+"current value:"+(value+val)+" put failed in tair at first time");
 			}else{
 				//System.out.println(key+" put suceess");
-				LOG.info("panzha:putPayTair "+key+" "+value+" put seccess in tair at first time");
-				//OperateFile.writeToFile(key+" "+value+" first");
+				//LOG.info("panzha:putPayTair "+key+" "+value+" put seccess in tair at first time");
+				OperateFile.writeToFile("insert "+key+" "+value+"current value:"+(value+val)+" put success at first time,status:"+rscode.toString());
 				return ;
 			}
-			
+			/*version not match ,try to insert,only when version match*/
 			while(!ResultCode.SUCCESS.equals(rscode)){
 				version = rs.getValue().getVersion();
 				val = (double)rs.getValue().getValue();
 				rscode = tairManager.put(namespace, key, value+val,version);
 			}
-			LOG.info("panzha:putPayTair "+key+" "+value+" update suceess in tair");
-			//OperateFile.writeToFile(key+" "+(value+val)+"update");
+			//LOG.info("panzha:putPayTair "+key+" "+value+" update suceess in tair"+rscode.toString());
+			OperateFile.writeToFile("insert "+key+" "+value+"current value:"+(value+val)+" update sucess,status:"+rscode.toString()
+					+"version "+version);
 		}
 	}
     //天猫的分钟交易额写入tair

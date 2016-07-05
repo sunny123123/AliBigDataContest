@@ -20,14 +20,16 @@ public class Demo {
 		tairManager.setTimeout(20000);
 		//updateDataTotair(1,"tmall001",100.02);
 		
-		//put(1,"tmall002",100.02);
+		//tairManager.put(0,"1467610805001","TAOBAO");
+		//Result<DataEntry> rs = tairManager.get(0, "1467610805001");
+		Result<DataEntry> rs = tairManager.get(0, "platformTaobao_34871wea6u_1467660");
 		//getRs(1,"tmall002");
-		tairManager.incr(1, "tmall003", 2, 1,0);
-		System.out.println(tairManager.get(1,"tmall003"));
+		//tairManager.incr(1, "tmall003", 2, 1,0);
+		//System.out.println(tairManager.get(1,"tmall003"));
 		//tairManager.getStat(qtype, groupName, serverId)
 		//Result<Integer> rs = tairManager.getItemCount(1, "tmall003");
 		//System.out.println(rs.getValue());
-		Result<DataEntry> rs = tairManager.getItems(1, "tmall003", 0, 1);
+		//Result<DataEntry> rs = tairManager.getItems(1, "tmall003", 0, 1);
 		System.out.println(rs);
 		//Result<DataEntry> rs = tairManager.get(1, "tmall001");
 		//System.out.println(rs);

@@ -35,11 +35,12 @@ public class RaceUtils {
     }
     //make 13 bit time stamp to 10 bit time stamp
     public static long getTimeStamp(long timeStamp){
-    	Calendar calender = Calendar.getInstance();
+    	/*Calendar calender = Calendar.getInstance();
 		calender.setTime(new Date(timeStamp));
 		calender.set(calender.SECOND, 0);
 		calender.set(calender.MILLISECOND, 0);
-		long secondTimeStamp = calender.getTimeInMillis();
-		return secondTimeStamp;
+		long secondTimeStamp = calender.getTimeInMillis();*/
+		 Long minuteTime = (timeStamp / 1000 / 60) * 60;
+		return minuteTime;
     }
 }

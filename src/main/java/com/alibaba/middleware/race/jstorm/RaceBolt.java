@@ -34,10 +34,10 @@ public class RaceBolt implements IRichBolt{
 			while(true){
 				PaymentStream pay = null ;
 				try {
-					//Thread.currentThread().sleep(500);
+					Thread.currentThread().sleep(20);
 					LOG.info("panzha:queueNUM"+paymentQueue.size());
 					pay = paymentQueue.take();
-					OperateFile.writeToFile("put "+pay+" to queue");
+					//OperateFile.writeToFile("put "+pay+" to queue");
 					addTradAmountToTair(pay);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -68,7 +68,7 @@ public class RaceBolt implements IRichBolt{
 		this.tairOP = new TairOperatorImpl();
 		this.paymentQueue = new LinkedBlockingQueue<PaymentStream>();
 		Thread t = new Thread(new QueueThread());
-		OperateFile.writeToFile("thread start");
+		OperateFile.writeToFile("queue thread start");
 		t.start();
 	}
 
@@ -79,12 +79,12 @@ public class RaceBolt implements IRichBolt{
 		
 		if(obj instanceof OrderStream){
 			OrderStream orderStream = (OrderStream)obj;
-			LOG.info("panzha:receive from spout:"+input.getMessageId().toString()+" "+orderStream.toString());
+			LOG.info("panzha:receive from spout:Order"+input.getMessageId().toString()+" "+orderStream.toString());
 			tairOP.putOrder(RaceConfig.TairNamespace, orderStream.getOrderId(), orderStream.getType());
 		}
 		if(obj instanceof PaymentStream){
 			PaymentStream payStream = (PaymentStream)obj;
-			LOG.info("panzha:receive from spout:"+input.getMessageId().toString()+" "+payStream.toString());
+			LOG.info("panzha:receive from spout:Pay"+input.getMessageId().toString()+" "+payStream.toString());
 			/*write tmall and taobao trade amount every minutes*/
 			addTradAmountToTair(payStream);
 			

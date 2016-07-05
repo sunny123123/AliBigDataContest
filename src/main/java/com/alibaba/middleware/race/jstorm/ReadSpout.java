@@ -27,6 +27,7 @@ import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently;
 import com.alibaba.rocketmq.client.exception.MQClientException;
 import com.alibaba.rocketmq.common.message.MessageExt;
+import com.sunny.utils.OperateFile;
 
 public class ReadSpout implements IRichSpout,MessageListenerConcurrently{
 	
@@ -100,7 +101,7 @@ public class ReadSpout implements IRichSpout,MessageListenerConcurrently{
 
 	public void fail(Object msgId) {
 		// TODO Auto-generated method stub
-		
+		OperateFile.writeToFile(msgId+"emit failed");
 	}
 
 	public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs,
@@ -153,7 +154,7 @@ public class ReadSpout implements IRichSpout,MessageListenerConcurrently{
 				 PaymentMessage pay = RaceUtils.readKryoObject(PaymentMessage.class, body);
 				 try {
 					paymentQueue.put(new PaymentStream(pay.getOrderId(), pay.getPayAmount(), pay.getPayPlatform(), 
-							 RaceUtils.getTimeStamp(pay.getCreateTime()/1000)));
+							 RaceUtils.getTimeStamp(pay.getCreateTime())));
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
