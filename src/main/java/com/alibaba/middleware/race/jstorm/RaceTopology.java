@@ -29,9 +29,13 @@ public class RaceTopology {
 	private static TopologyBuilder setupBuilder() throws Exception {
 		TopologyBuilder builder = new TopologyBuilder();
 
-		builder.setSpout("MetaSpout", new ReadSpout(),1);
-
-		builder.setBolt("MetaBolt", new RaceBolt(),1).shuffleGrouping("MetaSpout");
+		builder.setSpout("MetaOrderSpout", new SendOrderSpout(),1);
+		
+		builder.setSpout("MetaPaymentSpout", new SendPaymentSpout(),1);
+		
+		builder.setBolt("MetaBolt1", new RaceBolt(),1).shuffleGrouping("MetaOrderSpout").shuffleGrouping("MetaPaymentSpout");
+		
+		//builder.setBolt("MetaBolt2", new RaceBolt(),1).shuffleGrouping("MetaOrderSpout").shuffleGrouping("MetaPaymentSpout");
 
 		return builder;
 	}

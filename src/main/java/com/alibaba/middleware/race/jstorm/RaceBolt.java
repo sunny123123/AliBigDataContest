@@ -26,7 +26,7 @@ public class RaceBolt implements IRichBolt{
 	OutputCollector collector;
 	DefaultTairManager tairManager;
 	TairOperatorImpl tairOP;
-	LinkedBlockingQueue<PaymentStream> paymentQueue;
+	LinkedBlockingQueue<PaymentStream> paymentQueue = null;
 	
 	class QueueThread implements Runnable{
 		@Override
@@ -66,7 +66,8 @@ public class RaceBolt implements IRichBolt{
 		this.collector = collector;
 		//tairManager = TairManageFactory.getDefaultTairManager();
 		this.tairOP = new TairOperatorImpl();
-		this.paymentQueue = new LinkedBlockingQueue<PaymentStream>();
+		//this.paymentQueue = new LinkedBlockingQueue<PaymentStream>();
+		this.paymentQueue = ShareBlockingQueue.getBoltPaymentBlockingQueue();
 		Thread t = new Thread(new QueueThread());
 		OperateFile.writeToFile("queue thread start");
 		t.start();

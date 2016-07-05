@@ -11,6 +11,7 @@ import java.io.IOException;
 public class OperateFile {
 	private static BufferedReader br = null;
 	private static BufferedWriter bw = null;
+	
 	static{
 		String path = System.getProperty("user.dir");
 		//File file = new File("/root/workspace/AliBigDataContest/rs.txt");
