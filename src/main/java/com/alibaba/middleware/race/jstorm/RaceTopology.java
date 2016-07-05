@@ -35,7 +35,7 @@ public class RaceTopology {
 		
 		builder.setBolt("MetaBolt1", new RaceBolt(),1).shuffleGrouping("MetaOrderSpout").shuffleGrouping("MetaPaymentSpout");
 		
-		//builder.setBolt("MetaBolt2", new RaceBolt(),1).shuffleGrouping("MetaOrderSpout").shuffleGrouping("MetaPaymentSpout");
+		builder.setBolt("MetaBolt2", new RaceBolt(),1).shuffleGrouping("MetaOrderSpout").shuffleGrouping("MetaPaymentSpout");
 
 		return builder;
 	}

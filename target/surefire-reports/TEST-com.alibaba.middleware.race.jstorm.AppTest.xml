@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.003" errors="0" skipped="0" tests="1" name="com.alibaba.middleware.race.jstorm.AppTest">
+<testsuite failures="0" time="0.002" errors="0" skipped="0" tests="1" name="com.alibaba.middleware.race.jstorm.AppTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/BBBB/jdk1.7/jre/lib/amd64"/>
@@ -33,7 +33,7 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="3.16.0-71-generic"/>
     <property name="user.home" value="/root"/>
-    <property name="user.timezone" value="Asia/Hong_Kong"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="1.7"/>
@@ -59,5 +59,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.003" classname="com.alibaba.middleware.race.jstorm.AppTest" name="testApp"/>
+  <testcase time="0.002" classname="com.alibaba.middleware.race.jstorm.AppTest" name="testApp"/>
 </testsuite>
