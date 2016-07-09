@@ -2,6 +2,8 @@ package com.alibaba.middleware.race.model;
 
 import java.io.Serializable;
 
+import com.sunny.backup.TableItemFactory;
+
 /**
  * 我们后台RocketMq存储的订单消息模型类似于OrderMessage，选手也可以自定义
  * 订单消息模型，只要模型中各个字段的类型和顺序和OrderMessage一样，即可用Kryo

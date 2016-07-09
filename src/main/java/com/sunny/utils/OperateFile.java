@@ -8,33 +8,49 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
+
+import com.alibaba.middleware.race.RaceConfig;
+
 public class OperateFile {
-	private static BufferedReader br = null;
+	//private static BufferedReader br = null;
 	private static BufferedWriter bw = null;
-	
-	static{
-		String path = System.getProperty("user.dir");
-		//File file = new File("/root/workspace/AliBigDataContest/rs.txt");
-		File file = new File("./rs.txt");
-		 try {
-			//br = new BufferedReader(new FileReader(file));
-			bw = new BufferedWriter(new FileWriter(file));
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+	private static final String dir = "/BBBB/jstorm-2.1.1/logs/"+RaceConfig.JstormTopologyName+"/";
+	public static synchronized BufferedWriter getWriter(String fileName){
+		
+			File file = new File(dir+fileName);
+			if(!file.exists()){
+				try {
+					file.createNewFile();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+			 try {
+				//br = new BufferedReader(new FileReader(file));
+				bw = new BufferedWriter(new FileWriter(file));
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
 		}
+		return bw;
 	}
-	public static void writeToFile(String context){
+	public static void writeContent(BufferedWriter bw,String context){
 		try {
 			bw.write(context);
 			bw.newLine();
 			bw.flush();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 	}
+	public static void clearDir(){
+		try {
+			FileUtils.cleanDirectory(new File(dir));
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+	}
+	
 }

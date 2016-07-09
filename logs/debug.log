@@ -1,322 +1,954 @@
-2016-07-05 10:08:11 - Using SLF4J as the default logging framework
-2016-07-05 10:08:11 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 10:08:11 - java.nio.Buffer.address: available
-2016-07-05 10:08:11 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 10:08:11 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 10:08:11 - java.nio.Bits.unaligned: true
-2016-07-05 10:08:11 - Java version: 7
-2016-07-05 10:08:11 - -Dio.netty.noUnsafe: false
-2016-07-05 10:08:11 - sun.misc.Unsafe: available
-2016-07-05 10:08:11 - -Dio.netty.noJavassist: false
-2016-07-05 10:08:11 - Javassist: unavailable
-2016-07-05 10:08:11 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 10:08:11 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 10:08:11 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 10:08:11 - -Dio.netty.noPreferDirect: false
-2016-07-05 10:08:11 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 10:08:11 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 10:08:11 - -Dio.netty.initialSeedUniquifier: 0x12fec5574620747a (took 5 ms)
-2016-07-05 10:08:11 - -Dio.netty.allocator.type: unpooled
-2016-07-05 10:08:11 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 10:08:11 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 10:08:11 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 10:08:12 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 10:23:01 - Using SLF4J as the default logging framework
-2016-07-05 10:23:01 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 10:23:01 - java.nio.Buffer.address: available
-2016-07-05 10:23:01 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 10:23:01 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 10:23:01 - java.nio.Bits.unaligned: true
-2016-07-05 10:23:01 - Java version: 7
-2016-07-05 10:23:01 - -Dio.netty.noUnsafe: false
-2016-07-05 10:23:01 - sun.misc.Unsafe: available
-2016-07-05 10:23:01 - -Dio.netty.noJavassist: false
-2016-07-05 10:23:01 - Javassist: unavailable
-2016-07-05 10:23:01 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 10:23:01 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 10:23:01 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 10:23:01 - -Dio.netty.noPreferDirect: false
-2016-07-05 10:23:01 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 10:23:01 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 10:23:01 - -Dio.netty.initialSeedUniquifier: 0x79e0b0161409a4ac (took 5 ms)
-2016-07-05 10:23:01 - -Dio.netty.allocator.type: unpooled
-2016-07-05 10:23:01 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 10:23:01 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 10:23:01 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 10:23:01 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 10:32:02 - Using SLF4J as the default logging framework
-2016-07-05 10:32:02 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 10:32:02 - java.nio.Buffer.address: available
-2016-07-05 10:32:02 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 10:32:02 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 10:32:02 - java.nio.Bits.unaligned: true
-2016-07-05 10:32:02 - Java version: 7
-2016-07-05 10:32:02 - -Dio.netty.noUnsafe: false
-2016-07-05 10:32:02 - sun.misc.Unsafe: available
-2016-07-05 10:32:02 - -Dio.netty.noJavassist: false
-2016-07-05 10:32:02 - Javassist: unavailable
-2016-07-05 10:32:02 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 10:32:02 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 10:32:02 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 10:32:02 - -Dio.netty.noPreferDirect: false
-2016-07-05 10:32:02 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 10:32:02 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 10:32:03 - -Dio.netty.initialSeedUniquifier: 0x7a5f8dbae5c6264d (took 63 ms)
-2016-07-05 10:32:03 - -Dio.netty.allocator.type: unpooled
-2016-07-05 10:32:03 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 10:32:03 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 10:32:03 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 10:32:03 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 11:18:06 - Using SLF4J as the default logging framework
-2016-07-05 11:18:06 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 11:18:06 - java.nio.Buffer.address: available
-2016-07-05 11:18:06 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 11:18:06 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 11:18:06 - java.nio.Bits.unaligned: true
-2016-07-05 11:18:06 - Java version: 7
-2016-07-05 11:18:06 - -Dio.netty.noUnsafe: false
-2016-07-05 11:18:06 - sun.misc.Unsafe: available
-2016-07-05 11:18:06 - -Dio.netty.noJavassist: false
-2016-07-05 11:18:06 - Javassist: unavailable
-2016-07-05 11:18:06 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 11:18:06 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 11:18:06 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 11:18:06 - -Dio.netty.noPreferDirect: false
-2016-07-05 11:18:06 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 11:18:06 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 11:18:06 - -Dio.netty.initialSeedUniquifier: 0x79007420650ede08 (took 46 ms)
-2016-07-05 11:18:06 - -Dio.netty.allocator.type: unpooled
-2016-07-05 11:18:06 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 11:18:06 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 11:18:06 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 11:18:06 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 11:40:53 - Using SLF4J as the default logging framework
-2016-07-05 11:40:53 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 11:40:53 - java.nio.Buffer.address: available
-2016-07-05 11:40:53 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 11:40:53 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 11:40:53 - java.nio.Bits.unaligned: true
-2016-07-05 11:40:53 - Java version: 7
-2016-07-05 11:40:53 - -Dio.netty.noUnsafe: false
-2016-07-05 11:40:53 - sun.misc.Unsafe: available
-2016-07-05 11:40:53 - -Dio.netty.noJavassist: false
-2016-07-05 11:40:53 - Javassist: unavailable
-2016-07-05 11:40:53 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 11:40:53 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 11:40:53 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 11:40:53 - -Dio.netty.noPreferDirect: false
-2016-07-05 11:40:53 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 11:40:53 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 11:40:53 - -Dio.netty.initialSeedUniquifier: 0x417b416e1d06af8b (took 4 ms)
-2016-07-05 11:40:53 - -Dio.netty.allocator.type: unpooled
-2016-07-05 11:40:53 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 11:40:53 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 11:40:53 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 11:40:54 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 12:30:05 - Using SLF4J as the default logging framework
-2016-07-05 12:30:05 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 12:30:05 - java.nio.Buffer.address: available
-2016-07-05 12:30:05 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 12:30:05 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 12:30:05 - java.nio.Bits.unaligned: true
-2016-07-05 12:30:05 - Java version: 7
-2016-07-05 12:30:05 - -Dio.netty.noUnsafe: false
-2016-07-05 12:30:05 - sun.misc.Unsafe: available
-2016-07-05 12:30:05 - -Dio.netty.noJavassist: false
-2016-07-05 12:30:05 - Javassist: unavailable
-2016-07-05 12:30:05 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 12:30:05 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 12:30:05 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 12:30:05 - -Dio.netty.noPreferDirect: false
-2016-07-05 12:30:05 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 12:30:05 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 12:30:05 - -Dio.netty.initialSeedUniquifier: 0x1ab1f4001289980a (took 6 ms)
-2016-07-05 12:30:05 - -Dio.netty.allocator.type: unpooled
-2016-07-05 12:30:05 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 12:30:05 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 12:30:05 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 12:30:05 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 12:33:26 - Using SLF4J as the default logging framework
-2016-07-05 12:33:26 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 12:33:26 - java.nio.Buffer.address: available
-2016-07-05 12:33:26 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 12:33:26 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 12:33:26 - java.nio.Bits.unaligned: true
-2016-07-05 12:33:26 - Java version: 7
-2016-07-05 12:33:26 - -Dio.netty.noUnsafe: false
-2016-07-05 12:33:26 - sun.misc.Unsafe: available
-2016-07-05 12:33:26 - -Dio.netty.noJavassist: false
-2016-07-05 12:33:26 - Javassist: unavailable
-2016-07-05 12:33:26 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 12:33:26 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 12:33:26 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 12:33:26 - -Dio.netty.noPreferDirect: false
-2016-07-05 12:33:26 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 12:33:26 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 12:33:26 - -Dio.netty.initialSeedUniquifier: 0xd10e6b0bf0a7d4ef (took 5 ms)
-2016-07-05 12:33:26 - -Dio.netty.allocator.type: unpooled
-2016-07-05 12:33:26 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 12:33:26 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 12:33:26 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 12:33:26 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 13:37:50 - Using SLF4J as the default logging framework
-2016-07-05 13:37:50 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 13:37:50 - java.nio.Buffer.address: available
-2016-07-05 13:37:50 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 13:37:50 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 13:37:50 - java.nio.Bits.unaligned: true
-2016-07-05 13:37:50 - Java version: 7
-2016-07-05 13:37:50 - -Dio.netty.noUnsafe: false
-2016-07-05 13:37:50 - sun.misc.Unsafe: available
-2016-07-05 13:37:50 - -Dio.netty.noJavassist: false
-2016-07-05 13:37:50 - Javassist: unavailable
-2016-07-05 13:37:50 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 13:37:50 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 13:37:50 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 13:37:50 - -Dio.netty.noPreferDirect: false
-2016-07-05 13:37:50 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 13:37:50 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 13:37:50 - -Dio.netty.initialSeedUniquifier: 0x098fd35e786e9328 (took 63 ms)
-2016-07-05 13:37:51 - -Dio.netty.allocator.type: unpooled
-2016-07-05 13:37:51 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 13:37:51 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 13:37:51 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 13:37:51 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 13:38:53 - Using SLF4J as the default logging framework
-2016-07-05 13:38:53 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 13:38:53 - java.nio.Buffer.address: available
-2016-07-05 13:38:53 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 13:38:53 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 13:38:53 - java.nio.Bits.unaligned: true
-2016-07-05 13:38:53 - Java version: 7
-2016-07-05 13:38:53 - -Dio.netty.noUnsafe: false
-2016-07-05 13:38:53 - sun.misc.Unsafe: available
-2016-07-05 13:38:53 - -Dio.netty.noJavassist: false
-2016-07-05 13:38:53 - Javassist: unavailable
-2016-07-05 13:38:53 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 13:38:53 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 13:38:53 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 13:38:53 - -Dio.netty.noPreferDirect: false
-2016-07-05 13:38:53 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 13:38:53 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 13:38:53 - -Dio.netty.initialSeedUniquifier: 0x883f172a7d9c5c91 (took 5 ms)
-2016-07-05 13:38:53 - -Dio.netty.allocator.type: unpooled
-2016-07-05 13:38:53 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 13:38:53 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 13:38:53 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 13:38:53 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 13:59:02 - Using SLF4J as the default logging framework
-2016-07-05 13:59:02 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 13:59:02 - java.nio.Buffer.address: available
-2016-07-05 13:59:02 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 13:59:02 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 13:59:02 - java.nio.Bits.unaligned: true
-2016-07-05 13:59:02 - Java version: 7
-2016-07-05 13:59:02 - -Dio.netty.noUnsafe: false
-2016-07-05 13:59:02 - sun.misc.Unsafe: available
-2016-07-05 13:59:02 - -Dio.netty.noJavassist: false
-2016-07-05 13:59:02 - Javassist: unavailable
-2016-07-05 13:59:02 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 13:59:02 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 13:59:02 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 13:59:02 - -Dio.netty.noPreferDirect: false
-2016-07-05 13:59:02 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 13:59:02 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 13:59:02 - -Dio.netty.initialSeedUniquifier: 0x4b50bacf675bf8ab (took 18 ms)
-2016-07-05 13:59:02 - -Dio.netty.allocator.type: unpooled
-2016-07-05 13:59:02 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 13:59:02 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 13:59:02 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 13:59:02 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 13:59:36 - Using SLF4J as the default logging framework
-2016-07-05 13:59:36 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 13:59:36 - java.nio.Buffer.address: available
-2016-07-05 13:59:36 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 13:59:36 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 13:59:36 - java.nio.Bits.unaligned: true
-2016-07-05 13:59:36 - Java version: 7
-2016-07-05 13:59:36 - -Dio.netty.noUnsafe: false
-2016-07-05 13:59:36 - sun.misc.Unsafe: available
-2016-07-05 13:59:36 - -Dio.netty.noJavassist: false
-2016-07-05 13:59:36 - Javassist: unavailable
-2016-07-05 13:59:36 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 13:59:36 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 13:59:36 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 13:59:36 - -Dio.netty.noPreferDirect: false
-2016-07-05 13:59:36 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 13:59:36 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 13:59:36 - -Dio.netty.initialSeedUniquifier: 0x80b9bb4b25e96d38 (took 5 ms)
-2016-07-05 13:59:36 - -Dio.netty.allocator.type: unpooled
-2016-07-05 13:59:36 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 13:59:36 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 13:59:36 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 13:59:36 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 14:03:26 - Using SLF4J as the default logging framework
-2016-07-05 14:03:26 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 14:03:26 - java.nio.Buffer.address: available
-2016-07-05 14:03:26 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 14:03:26 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 14:03:26 - java.nio.Bits.unaligned: true
-2016-07-05 14:03:26 - Java version: 7
-2016-07-05 14:03:26 - -Dio.netty.noUnsafe: false
-2016-07-05 14:03:26 - sun.misc.Unsafe: available
-2016-07-05 14:03:26 - -Dio.netty.noJavassist: false
-2016-07-05 14:03:26 - Javassist: unavailable
-2016-07-05 14:03:26 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 14:03:26 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 14:03:26 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 14:03:26 - -Dio.netty.noPreferDirect: false
-2016-07-05 14:03:26 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 14:03:26 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 14:03:26 - -Dio.netty.initialSeedUniquifier: 0xc55257e82382c9c6 (took 5 ms)
-2016-07-05 14:03:26 - -Dio.netty.allocator.type: unpooled
-2016-07-05 14:03:26 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 14:03:26 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 14:03:26 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 14:03:27 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 14:34:30 - Using SLF4J as the default logging framework
-2016-07-05 14:34:30 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 14:34:30 - java.nio.Buffer.address: available
-2016-07-05 14:34:30 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 14:34:30 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 14:34:30 - java.nio.Bits.unaligned: true
-2016-07-05 14:34:30 - Java version: 7
-2016-07-05 14:34:30 - -Dio.netty.noUnsafe: false
-2016-07-05 14:34:30 - sun.misc.Unsafe: available
-2016-07-05 14:34:30 - -Dio.netty.noJavassist: false
-2016-07-05 14:34:30 - Javassist: unavailable
-2016-07-05 14:34:30 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 14:34:30 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 14:34:30 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 14:34:30 - -Dio.netty.noPreferDirect: false
-2016-07-05 14:34:30 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 14:34:30 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 14:34:30 - -Dio.netty.initialSeedUniquifier: 0x7692cd8bca54f848 (took 4 ms)
-2016-07-05 14:34:30 - -Dio.netty.allocator.type: unpooled
-2016-07-05 14:34:30 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 14:34:30 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 14:34:30 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 14:34:30 - java.nio.ByteBuffer.cleaner(): available
-2016-07-05 14:39:27 - Using SLF4J as the default logging framework
-2016-07-05 14:39:27 - -Dio.netty.eventLoopThreads: 16
-2016-07-05 14:39:27 - java.nio.Buffer.address: available
-2016-07-05 14:39:27 - sun.misc.Unsafe.theUnsafe: available
-2016-07-05 14:39:27 - sun.misc.Unsafe.copyMemory: available
-2016-07-05 14:39:27 - java.nio.Bits.unaligned: true
-2016-07-05 14:39:27 - Java version: 7
-2016-07-05 14:39:27 - -Dio.netty.noUnsafe: false
-2016-07-05 14:39:27 - sun.misc.Unsafe: available
-2016-07-05 14:39:27 - -Dio.netty.noJavassist: false
-2016-07-05 14:39:27 - Javassist: unavailable
-2016-07-05 14:39:27 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-2016-07-05 14:39:27 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2016-07-05 14:39:27 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2016-07-05 14:39:27 - -Dio.netty.noPreferDirect: false
-2016-07-05 14:39:27 - -Dio.netty.noKeySetOptimization: false
-2016-07-05 14:39:27 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2016-07-05 14:39:27 - -Dio.netty.initialSeedUniquifier: 0xd982fe8f556f43f3 (took 4 ms)
-2016-07-05 14:39:27 - -Dio.netty.allocator.type: unpooled
-2016-07-05 14:39:27 - -Dio.netty.threadLocalDirectBufferSize: 65536
-2016-07-05 14:39:27 - -Dio.netty.recycler.maxCapacity.default: 262144
-2016-07-05 14:39:27 - -Dio.netty.leakDetectionLevel: simple
-2016-07-05 14:39:28 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 08:53:52 - Using SLF4J as the default logging framework
+2016-07-09 08:53:52 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 08:53:52 - java.nio.Buffer.address: available
+2016-07-09 08:53:52 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 08:53:52 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 08:53:52 - java.nio.Bits.unaligned: true
+2016-07-09 08:53:52 - Java version: 7
+2016-07-09 08:53:52 - -Dio.netty.noUnsafe: false
+2016-07-09 08:53:52 - sun.misc.Unsafe: available
+2016-07-09 08:53:52 - -Dio.netty.noJavassist: false
+2016-07-09 08:53:52 - Javassist: unavailable
+2016-07-09 08:53:52 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 08:53:52 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 08:53:52 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 08:53:52 - -Dio.netty.noPreferDirect: false
+2016-07-09 08:53:53 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 08:53:53 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 08:53:53 - -Dio.netty.initialSeedUniquifier: 0x3a802760f4d0a29e (took 7 ms)
+2016-07-09 08:53:53 - -Dio.netty.allocator.type: unpooled
+2016-07-09 08:53:53 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 08:53:53 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 08:53:53 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 08:53:53 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 08:54:16 - Using SLF4J as the default logging framework
+2016-07-09 08:54:16 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 08:54:16 - java.nio.Buffer.address: available
+2016-07-09 08:54:16 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 08:54:16 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 08:54:16 - java.nio.Bits.unaligned: true
+2016-07-09 08:54:16 - Java version: 7
+2016-07-09 08:54:16 - -Dio.netty.noUnsafe: false
+2016-07-09 08:54:16 - sun.misc.Unsafe: available
+2016-07-09 08:54:16 - -Dio.netty.noJavassist: false
+2016-07-09 08:54:16 - Javassist: unavailable
+2016-07-09 08:54:16 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 08:54:16 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 08:54:16 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 08:54:16 - -Dio.netty.noPreferDirect: false
+2016-07-09 08:54:16 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 08:54:16 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 08:54:16 - -Dio.netty.initialSeedUniquifier: 0x37e9d109558b15c8 (took 4 ms)
+2016-07-09 08:54:16 - -Dio.netty.allocator.type: unpooled
+2016-07-09 08:54:16 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 08:54:16 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 08:54:16 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 08:54:16 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 08:54:17 - MiddlewareRaceTestData_Pay Got the end signal
+2016-07-09 08:54:17 - PAYMENT:1
+2016-07-09 08:54:17 - PAYMENT:3
+2016-07-09 08:54:17 - PAYMENT:5
+2016-07-09 08:54:17 - PAYMENT:6
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E70774 PaymentMessage{orderId=1468025633623, payAmount=6862.0, paySource=0, payPlatform=0, createTime=1468025633764}
+2016-07-09 08:54:17 - PAYMENT:4
+2016-07-09 08:54:17 - PAYMENT:8
+2016-07-09 08:54:17 - PAYMENT:2
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E6FD2A PaymentMessage{orderId=1468025633622, payAmount=1212.0, paySource=0, payPlatform=0, createTime=1468025633776}
+2016-07-09 08:54:17 - PAYMENT:12
+2016-07-09 08:54:17 - PAYMENT:13
+2016-07-09 08:54:17 - PAYMENT:17
+2016-07-09 08:54:17 - PAYMENT:11
+2016-07-09 08:54:17 - PAYMENT:20
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E70BE1 PaymentMessage{orderId=1468025633625, payAmount=20954.0, paySource=0, payPlatform=0, createTime=1468025633802}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E6FB40 PaymentMessage{orderId=1468025633621, payAmount=64790.45, paySource=1, payPlatform=1, createTime=1468025633624}
+2016-07-09 08:54:17 - PAYMENT:10
+2016-07-09 08:54:17 - PAYMENT:9
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E6FC92 PaymentMessage{orderId=1468025633623, payAmount=92599.38, paySource=1, payPlatform=1, createTime=1468025633838}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E709F6 PaymentMessage{orderId=1468025633622, payAmount=41530.85, paySource=1, payPlatform=1, createTime=1468025633775}
+2016-07-09 08:54:17 - PAYMENT:7
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E70622 PaymentMessage{orderId=1468025633627, payAmount=59622.5, paySource=1, payPlatform=1, createTime=1468025633837}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E6FDC2 PaymentMessage{orderId=1468025633621, payAmount=25526.0, paySource=0, payPlatform=0, createTime=1468025633671}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E6FE5A PaymentMessage{orderId=1468025633629, payAmount=16535.11, paySource=1, payPlatform=1, createTime=1468025633874}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E700FE PaymentMessage{orderId=1468025633629, payAmount=3349.0, paySource=0, payPlatform=0, createTime=1468025633807}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E702C6 PaymentMessage{orderId=1468025633628, payAmount=7652.0, paySource=0, payPlatform=0, createTime=1468025633857}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E6FFAC PaymentMessage{orderId=1468025633630, payAmount=54353.22, paySource=1, payPlatform=1, createTime=1468025633826}
+2016-07-09 08:54:17 - PAYMENT:19
+2016-07-09 08:54:17 - PAYMENT:18
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E70B49 PaymentMessage{orderId=1468025633625, payAmount=52233.67999999999, paySource=1, payPlatform=1, createTime=1468025633781}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7058A PaymentMessage{orderId=1468025633627, payAmount=14753.0, paySource=0, payPlatform=0, createTime=1468025633850}
+2016-07-09 08:54:17 - PAYMENT:16
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E70196 PaymentMessage{orderId=1468025633628, payAmount=33677.95, paySource=1, payPlatform=1, createTime=1468025633841}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7095E PaymentMessage{orderId=1468025633626, payAmount=1912.0, paySource=0, payPlatform=0, createTime=1468025633822}
+2016-07-09 08:54:17 - PAYMENT:14
+2016-07-09 08:54:17 - PAYMENT:15
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E6FAA8 PaymentMessage{orderId=1468025633624, payAmount=25493.0, paySource=0, payPlatform=0, createTime=1468025633795}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E708C6 PaymentMessage{orderId=1468025633626, payAmount=15400.39, paySource=1, payPlatform=1, createTime=1468025633869}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7022E PaymentMessage{orderId=1468025633630, payAmount=16770.0, paySource=0, payPlatform=0, createTime=1468025633854}
+2016-07-09 08:54:17 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E70C79 PaymentMessage{orderId=1468025633624, payAmount=62554.490000000005, paySource=1, payPlatform=1, createTime=1468025633837}
+2016-07-09 08:54:17 - MiddlewareRaceTestData_TMOrder Got the end signal
+2016-07-09 08:54:17 - MiddlewareRaceTestData_TBOrder Got the end signal
+2016-07-09 08:54:17 - TAOBAOORDER:1
+2016-07-09 08:54:17 - TAOBAOORDER:2
+2016-07-09 08:54:17 - TAOBAOORDER:3
+2016-07-09 08:54:17 - TMALLORDER:2
+2016-07-09 08:54:17 - TMALLORDER:1
+2016-07-09 08:54:17 - TAOBAOORDER:5
+2016-07-09 08:54:17 - panzha:taobaoorder received from mqnull 0A7C16D500002A9F0000000001E70A8E OrderMessage{orderId=1468025633625, buyerId='buyer9876', productId='product1317', salerId='tb_saler2076', createTime=1468025633774, totalPrice=73187.68}
+2016-07-09 08:54:17 - TAOBAOORDER:4
+2016-07-09 08:54:17 - panzha:taobaoorder received from mqnull 0A7C16D500002A9F0000000001E6F9EE OrderMessage{orderId=1468025633621, buyerId='buyer7353', productId='product518', salerId='tb_saler7412', createTime=1468025633621, totalPrice=90316.45}
+2016-07-09 08:54:17 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E706BA OrderMessage{orderId=1468025633626, buyerId='buyer3711', productId='product306', salerId='tm_saler5010', createTime=1468025633776, totalPrice=17312.39}
+2016-07-09 08:54:17 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E7035E OrderMessage{orderId=1468025633623, buyerId='buyer6457', productId='product986', salerId='tm_saler7', createTime=1468025633748, totalPrice=99461.38}
+2016-07-09 08:54:17 - panzha:taobaoorder received from mqnull 0A7C16D500002A9F0000000001E7080C OrderMessage{orderId=1468025633622, buyerId='buyer8104', productId='product805', salerId='tb_saler5835', createTime=1468025633745, totalPrice=42742.85}
+2016-07-09 08:54:17 - panzha:taobaoorder received from mqnull 0A7C16D500002A9F0000000001E70044 OrderMessage{orderId=1468025633629, buyerId='buyer6723', productId='product685', salerId='tb_saler4710', createTime=1468025633782, totalPrice=19884.11}
+2016-07-09 08:54:17 - TMALLORDER:3
+2016-07-09 08:54:17 - TAOBAOORDER:6
+2016-07-09 08:54:17 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E704D0 OrderMessage{orderId=1468025633627, buyerId='buyer5212', productId='product864', salerId='tm_saler6395', createTime=1468025633780, totalPrice=74375.5}
+2016-07-09 08:54:17 - panzha:taobaoorder received from mqnull 0A7C16D500002A9F0000000001E6FBD8 OrderMessage{orderId=1468025633624, buyerId='buyer4830', productId='product114', salerId='tb_saler2827', createTime=1468025633771, totalPrice=88047.49}
+2016-07-09 08:54:17 - panzha:taobaoorder received from mqnull 0A7C16D500002A9F0000000001E70415 OrderMessage{orderId=1468025633628, buyerId='buyer7366', productId='product1509', salerId='tb_saler9303', createTime=1468025633781, totalPrice=41329.95}
+2016-07-09 08:54:17 - TMALLORDER:4
+2016-07-09 08:54:17 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E6FEF2 OrderMessage{orderId=1468025633630, buyerId='buyer1391', productId='product563', salerId='tm_saler3385', createTime=1468025633784, totalPrice=71123.22}
+2016-07-09 08:55:12 - Using SLF4J as the default logging framework
+2016-07-09 08:55:12 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 08:55:12 - java.nio.Buffer.address: available
+2016-07-09 08:55:12 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 08:55:12 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 08:55:12 - java.nio.Bits.unaligned: true
+2016-07-09 08:55:12 - Java version: 7
+2016-07-09 08:55:12 - -Dio.netty.noUnsafe: false
+2016-07-09 08:55:12 - sun.misc.Unsafe: available
+2016-07-09 08:55:12 - -Dio.netty.noJavassist: false
+2016-07-09 08:55:12 - Javassist: unavailable
+2016-07-09 08:55:12 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 08:55:12 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 08:55:12 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 08:55:12 - -Dio.netty.noPreferDirect: false
+2016-07-09 08:55:12 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 08:55:12 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 08:55:12 - -Dio.netty.initialSeedUniquifier: 0xb71d9014a16bd396 (took 5 ms)
+2016-07-09 08:55:12 - -Dio.netty.allocator.type: unpooled
+2016-07-09 08:55:12 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 08:55:12 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 08:55:12 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 08:55:12 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 09:04:48 - Using SLF4J as the default logging framework
+2016-07-09 09:04:48 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 09:04:48 - java.nio.Buffer.address: available
+2016-07-09 09:04:48 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 09:04:48 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 09:04:48 - java.nio.Bits.unaligned: true
+2016-07-09 09:04:48 - Java version: 7
+2016-07-09 09:04:48 - -Dio.netty.noUnsafe: false
+2016-07-09 09:04:48 - sun.misc.Unsafe: available
+2016-07-09 09:04:48 - -Dio.netty.noJavassist: false
+2016-07-09 09:04:48 - Javassist: unavailable
+2016-07-09 09:04:48 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 09:04:48 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 09:04:48 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 09:04:48 - -Dio.netty.noPreferDirect: false
+2016-07-09 09:04:48 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 09:04:48 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 09:04:49 - -Dio.netty.initialSeedUniquifier: 0x158d8d944cdf6574 (took 50 ms)
+2016-07-09 09:04:49 - -Dio.netty.allocator.type: unpooled
+2016-07-09 09:04:49 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 09:04:49 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 09:04:49 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 09:04:49 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 09:13:23 - Using SLF4J as the default logging framework
+2016-07-09 09:13:23 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 09:13:23 - java.nio.Buffer.address: available
+2016-07-09 09:13:23 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 09:13:23 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 09:13:23 - java.nio.Bits.unaligned: true
+2016-07-09 09:13:23 - Java version: 7
+2016-07-09 09:13:23 - -Dio.netty.noUnsafe: false
+2016-07-09 09:13:23 - sun.misc.Unsafe: available
+2016-07-09 09:13:23 - -Dio.netty.noJavassist: false
+2016-07-09 09:13:23 - Javassist: unavailable
+2016-07-09 09:13:23 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 09:13:23 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 09:13:23 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 09:13:23 - -Dio.netty.noPreferDirect: false
+2016-07-09 09:13:23 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 09:13:23 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 09:13:23 - -Dio.netty.initialSeedUniquifier: 0x6e596adaa41ff6c7 (took 4 ms)
+2016-07-09 09:13:23 - -Dio.netty.allocator.type: unpooled
+2016-07-09 09:13:23 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 09:13:23 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 09:13:23 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 09:13:23 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 09:24:19 - Using SLF4J as the default logging framework
+2016-07-09 09:24:19 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 09:24:19 - java.nio.Buffer.address: available
+2016-07-09 09:24:19 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 09:24:19 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 09:24:19 - java.nio.Bits.unaligned: true
+2016-07-09 09:24:19 - Java version: 7
+2016-07-09 09:24:19 - -Dio.netty.noUnsafe: false
+2016-07-09 09:24:19 - sun.misc.Unsafe: available
+2016-07-09 09:24:19 - -Dio.netty.noJavassist: false
+2016-07-09 09:24:19 - Javassist: unavailable
+2016-07-09 09:24:19 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 09:24:19 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 09:24:19 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 09:24:19 - -Dio.netty.noPreferDirect: false
+2016-07-09 09:24:19 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 09:24:19 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 09:24:19 - -Dio.netty.initialSeedUniquifier: 0xfc8c45e8b6d3a709 (took 7 ms)
+2016-07-09 09:24:19 - -Dio.netty.allocator.type: unpooled
+2016-07-09 09:24:19 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 09:24:19 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 09:24:19 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 09:24:19 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 09:27:23 - Using SLF4J as the default logging framework
+2016-07-09 09:27:23 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 09:27:23 - java.nio.Buffer.address: available
+2016-07-09 09:27:23 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 09:27:23 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 09:27:23 - java.nio.Bits.unaligned: true
+2016-07-09 09:27:23 - Java version: 7
+2016-07-09 09:27:23 - -Dio.netty.noUnsafe: false
+2016-07-09 09:27:23 - sun.misc.Unsafe: available
+2016-07-09 09:27:23 - -Dio.netty.noJavassist: false
+2016-07-09 09:27:23 - Javassist: unavailable
+2016-07-09 09:27:23 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 09:27:23 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 09:27:23 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 09:27:23 - -Dio.netty.noPreferDirect: false
+2016-07-09 09:27:23 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 09:27:23 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 09:27:23 - -Dio.netty.initialSeedUniquifier: 0x9fe8355b6d905383 (took 10 ms)
+2016-07-09 09:27:23 - -Dio.netty.allocator.type: unpooled
+2016-07-09 09:27:23 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 09:27:23 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 09:27:23 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 09:27:23 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 09:31:11 - Using SLF4J as the default logging framework
+2016-07-09 09:31:11 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 09:31:11 - java.nio.Buffer.address: available
+2016-07-09 09:31:11 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 09:31:11 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 09:31:11 - java.nio.Bits.unaligned: true
+2016-07-09 09:31:11 - Java version: 7
+2016-07-09 09:31:11 - -Dio.netty.noUnsafe: false
+2016-07-09 09:31:11 - sun.misc.Unsafe: available
+2016-07-09 09:31:11 - -Dio.netty.noJavassist: false
+2016-07-09 09:31:11 - Javassist: unavailable
+2016-07-09 09:31:11 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 09:31:11 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 09:31:11 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 09:31:11 - -Dio.netty.noPreferDirect: false
+2016-07-09 09:31:11 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 09:31:11 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 09:31:11 - -Dio.netty.initialSeedUniquifier: 0xd65409c3e5c23c0d (took 5 ms)
+2016-07-09 09:31:11 - -Dio.netty.allocator.type: unpooled
+2016-07-09 09:31:11 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 09:31:11 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 09:31:11 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 09:31:11 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 09:37:14 - Using SLF4J as the default logging framework
+2016-07-09 09:37:14 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 09:37:14 - java.nio.Buffer.address: available
+2016-07-09 09:37:14 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 09:37:14 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 09:37:14 - java.nio.Bits.unaligned: true
+2016-07-09 09:37:14 - Java version: 7
+2016-07-09 09:37:14 - -Dio.netty.noUnsafe: false
+2016-07-09 09:37:14 - sun.misc.Unsafe: available
+2016-07-09 09:37:14 - -Dio.netty.noJavassist: false
+2016-07-09 09:37:14 - Javassist: unavailable
+2016-07-09 09:37:14 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 09:37:14 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 09:37:14 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 09:37:14 - -Dio.netty.noPreferDirect: false
+2016-07-09 09:37:14 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 09:37:14 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 09:37:14 - -Dio.netty.initialSeedUniquifier: 0x58c201853e49ade4 (took 5 ms)
+2016-07-09 09:37:14 - -Dio.netty.allocator.type: unpooled
+2016-07-09 09:37:14 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 09:37:14 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 09:37:14 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 09:37:14 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 09:40:55 - Using SLF4J as the default logging framework
+2016-07-09 09:40:55 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 09:40:55 - java.nio.Buffer.address: available
+2016-07-09 09:40:55 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 09:40:55 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 09:40:55 - java.nio.Bits.unaligned: true
+2016-07-09 09:40:55 - Java version: 7
+2016-07-09 09:40:55 - -Dio.netty.noUnsafe: false
+2016-07-09 09:40:55 - sun.misc.Unsafe: available
+2016-07-09 09:40:55 - -Dio.netty.noJavassist: false
+2016-07-09 09:40:55 - Javassist: unavailable
+2016-07-09 09:40:55 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 09:40:55 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 09:40:55 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 09:40:55 - -Dio.netty.noPreferDirect: false
+2016-07-09 09:40:55 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 09:40:55 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 09:40:55 - -Dio.netty.initialSeedUniquifier: 0x3a070ae69b3c7028 (took 5 ms)
+2016-07-09 09:40:55 - -Dio.netty.allocator.type: unpooled
+2016-07-09 09:40:55 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 09:40:55 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 09:40:55 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 09:40:55 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 10:54:07 - Using SLF4J as the default logging framework
+2016-07-09 10:54:07 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 10:54:07 - java.nio.Buffer.address: available
+2016-07-09 10:54:07 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 10:54:07 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 10:54:07 - java.nio.Bits.unaligned: true
+2016-07-09 10:54:07 - Java version: 7
+2016-07-09 10:54:07 - -Dio.netty.noUnsafe: false
+2016-07-09 10:54:07 - sun.misc.Unsafe: available
+2016-07-09 10:54:07 - -Dio.netty.noJavassist: false
+2016-07-09 10:54:07 - Javassist: unavailable
+2016-07-09 10:54:07 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 10:54:07 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 10:54:07 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 10:54:07 - -Dio.netty.noPreferDirect: false
+2016-07-09 10:54:07 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 10:54:07 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 10:54:07 - -Dio.netty.initialSeedUniquifier: 0xde45e045193943a3 (took 5 ms)
+2016-07-09 10:54:07 - -Dio.netty.allocator.type: unpooled
+2016-07-09 10:54:07 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 10:54:07 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 10:54:07 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 10:54:07 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 10:54:31 - Using SLF4J as the default logging framework
+2016-07-09 10:54:31 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 10:54:31 - java.nio.Buffer.address: available
+2016-07-09 10:54:31 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 10:54:31 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 10:54:31 - java.nio.Bits.unaligned: true
+2016-07-09 10:54:31 - Java version: 7
+2016-07-09 10:54:31 - -Dio.netty.noUnsafe: false
+2016-07-09 10:54:31 - sun.misc.Unsafe: available
+2016-07-09 10:54:31 - -Dio.netty.noJavassist: false
+2016-07-09 10:54:31 - Javassist: unavailable
+2016-07-09 10:54:31 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 10:54:31 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 10:54:31 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 10:54:31 - -Dio.netty.noPreferDirect: false
+2016-07-09 10:54:31 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 10:54:31 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 10:54:31 - -Dio.netty.initialSeedUniquifier: 0x3943a7f990c3b88b (took 7 ms)
+2016-07-09 10:54:31 - -Dio.netty.allocator.type: unpooled
+2016-07-09 10:54:31 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 10:54:31 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 10:54:31 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 10:54:31 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 11:01:11 - Using SLF4J as the default logging framework
+2016-07-09 11:01:11 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 11:01:11 - java.nio.Buffer.address: available
+2016-07-09 11:01:11 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 11:01:11 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 11:01:11 - java.nio.Bits.unaligned: true
+2016-07-09 11:01:11 - Java version: 7
+2016-07-09 11:01:11 - -Dio.netty.noUnsafe: false
+2016-07-09 11:01:11 - sun.misc.Unsafe: available
+2016-07-09 11:01:11 - -Dio.netty.noJavassist: false
+2016-07-09 11:01:11 - Javassist: unavailable
+2016-07-09 11:01:11 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 11:01:11 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 11:01:11 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 11:01:11 - -Dio.netty.noPreferDirect: false
+2016-07-09 11:01:11 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 11:01:11 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 11:01:11 - -Dio.netty.initialSeedUniquifier: 0x155eba19dd23d32b (took 4 ms)
+2016-07-09 11:01:11 - -Dio.netty.allocator.type: unpooled
+2016-07-09 11:01:11 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 11:01:11 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 11:01:11 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 11:01:11 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 11:08:50 - Using SLF4J as the default logging framework
+2016-07-09 11:08:50 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 11:08:50 - java.nio.Buffer.address: available
+2016-07-09 11:08:50 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 11:08:50 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 11:08:50 - java.nio.Bits.unaligned: true
+2016-07-09 11:08:50 - Java version: 7
+2016-07-09 11:08:50 - -Dio.netty.noUnsafe: false
+2016-07-09 11:08:50 - sun.misc.Unsafe: available
+2016-07-09 11:08:50 - -Dio.netty.noJavassist: false
+2016-07-09 11:08:50 - Javassist: unavailable
+2016-07-09 11:08:50 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 11:08:50 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 11:08:50 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 11:08:50 - -Dio.netty.noPreferDirect: false
+2016-07-09 11:08:50 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 11:08:50 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 11:08:50 - -Dio.netty.initialSeedUniquifier: 0x4e192c19566f95cc (took 5 ms)
+2016-07-09 11:08:50 - -Dio.netty.allocator.type: unpooled
+2016-07-09 11:08:50 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 11:08:50 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 11:08:50 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 11:08:50 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 11:08:51 - MiddlewareRaceTestData_Pay Got the end signal
+2016-07-09 11:08:51 - PAYMENT:1
+2016-07-09 11:08:51 - PAYMENT:3
+2016-07-09 11:08:51 - PAYMENT:6
+2016-07-09 11:08:51 - PAYMENT:10
+2016-07-09 11:08:51 - PAYMENT:7
+2016-07-09 11:08:51 - PAYMENT:19
+2016-07-09 11:08:51 - PAYMENT:5
+2016-07-09 11:08:51 - PAYMENT:2
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7C373 PaymentMessage{orderId=1468033271952, payAmount=12729.0, paySource=0, payPlatform=0, createTime=1468033272111}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7BA01 PaymentMessage{orderId=1468033271946, payAmount=77055.45, paySource=1, payPlatform=1, createTime=1468033272070}
+2016-07-09 11:08:51 - PAYMENT:4
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7C618 PaymentMessage{orderId=1468033271953, payAmount=5688.0, paySource=0, payPlatform=0, createTime=1468033272106}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7BA99 PaymentMessage{orderId=1468033271947, payAmount=61487.63, paySource=1, payPlatform=1, createTime=1468033272112}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7B6C8 PaymentMessage{orderId=1468033271945, payAmount=64831.53, paySource=1, payPlatform=1, createTime=1468033272113}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7B8B0 PaymentMessage{orderId=1468033271946, payAmount=1748.0, paySource=0, payPlatform=0, createTime=1468033272101}
+2016-07-09 11:08:51 - PAYMENT:20
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7B575 PaymentMessage{orderId=1468033271944, payAmount=23349.42, paySource=1, payPlatform=1, createTime=1468033271958}
+2016-07-09 11:08:51 - PAYMENT:18
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7B4DD PaymentMessage{orderId=1468033271944, payAmount=6293.0, paySource=0, payPlatform=0, createTime=1468033271964}
+2016-07-09 11:08:51 - PAYMENT:13
+2016-07-09 11:08:51 - PAYMENT:11
+2016-07-09 11:08:51 - PAYMENT:17
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7BE6E PaymentMessage{orderId=1468033271949, payAmount=10361.0, paySource=0, payPlatform=0, createTime=1468033272105}
+2016-07-09 11:08:51 - MiddlewareRaceTestData_TMOrder Got the end signal
+2016-07-09 11:08:51 - PAYMENT:16
+2016-07-09 11:08:51 - PAYMENT:15
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7BB31 PaymentMessage{orderId=1468033271947, payAmount=2964.0, paySource=0, payPlatform=0, createTime=1468033272105}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7BC84 PaymentMessage{orderId=1468033271948, payAmount=2357.0, paySource=0, payPlatform=0, createTime=1468033272073}
+2016-07-09 11:08:51 - PAYMENT:14
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7C1AB PaymentMessage{orderId=1468033271949, payAmount=41695.58, paySource=1, payPlatform=1, createTime=1468033272092}
+2016-07-09 11:08:51 - PAYMENT:12
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7C2DB PaymentMessage{orderId=1468033271951, payAmount=14243.580000000002, paySource=1, payPlatform=1, createTime=1468033272120}
+2016-07-09 11:08:51 - PAYMENT:9
+2016-07-09 11:08:51 - PAYMENT:8
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7BFC0 PaymentMessage{orderId=1468033271950, payAmount=8511.0, paySource=0, payPlatform=0, createTime=1468033272090}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7B760 PaymentMessage{orderId=1468033271945, payAmount=26014.0, paySource=0, payPlatform=0, createTime=1468033272113}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7BD1C PaymentMessage{orderId=1468033271948, payAmount=13314.86, paySource=1, payPlatform=1, createTime=1468033272116}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7C243 PaymentMessage{orderId=1468033271951, payAmount=5170.0, paySource=0, payPlatform=0, createTime=1468033272048}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7C6B0 PaymentMessage{orderId=1468033271953, payAmount=14479.84, paySource=1, payPlatform=1, createTime=1468033272084}
+2016-07-09 11:08:51 - MiddlewareRaceTestData_TBOrder Got the end signal
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7C4C5 PaymentMessage{orderId=1468033271952, payAmount=14547.3, paySource=1, payPlatform=1, createTime=1468033272098}
+2016-07-09 11:08:51 - panzha:payment received from mqnull 0A7C16D500002A9F0000000001E7C058 PaymentMessage{orderId=1468033271950, payAmount=8880.669999999998, paySource=1, payPlatform=1, createTime=1468033272110}
+2016-07-09 11:08:51 - TMALLORDER:1
+2016-07-09 11:08:51 - TMALLORDER:2
+2016-07-09 11:08:51 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E7C0F0 OrderMessage{orderId=1468033271951, buyerId='buyer1616', productId='product1278', salerId='tm_saler6979', createTime=1468033272032, totalPrice=19413.58}
+2016-07-09 11:08:51 - TMALLORDER:5
+2016-07-09 11:08:51 - TMALLORDER:6
+2016-07-09 11:08:51 - TMALLORDER:7
+2016-07-09 11:08:51 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E7B422 OrderMessage{orderId=1468033271944, buyerId='buyer3013', productId='product1495', salerId='tm_saler1690', createTime=1468033271944, totalPrice=29642.42}
+2016-07-09 11:08:51 - TMALLORDER:3
+2016-07-09 11:08:51 - TAOBAOORDER:1
+2016-07-09 11:08:51 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E7B948 OrderMessage{orderId=1468033271947, buyerId='buyer4695', productId='product710', salerId='tm_saler351', createTime=1468033272027, totalPrice=64451.63}
+2016-07-09 11:08:51 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E7BF06 OrderMessage{orderId=1468033271950, buyerId='buyer1991', productId='product144', salerId='tm_saler3688', createTime=1468033272031, totalPrice=17391.67}
+2016-07-09 11:08:51 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E7B60D OrderMessage{orderId=1468033271945, buyerId='buyer6444', productId='product1905', salerId='tm_saler9505', createTime=1468033272024, totalPrice=90845.53}
+2016-07-09 11:08:51 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E7BDB4 OrderMessage{orderId=1468033271949, buyerId='buyer3017', productId='product383', salerId='tm_saler1408', createTime=1468033272029, totalPrice=52056.58}
+2016-07-09 11:08:51 - TMALLORDER:8
+2016-07-09 11:08:51 - TAOBAOORDER:2
+2016-07-09 11:08:51 - TMALLORDER:4
+2016-07-09 11:08:51 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E7C55D OrderMessage{orderId=1468033271953, buyerId='buyer4186', productId='product1620', salerId='tm_saler1663', createTime=1468033272034, totalPrice=20167.84}
+2016-07-09 11:08:51 - panzha:taobaoorder received from mqnull 0A7C16D500002A9F0000000001E7B7F8 OrderMessage{orderId=1468033271946, buyerId='buyer8553', productId='product8', salerId='tb_saler8981', createTime=1468033272025, totalPrice=78803.45}
+2016-07-09 11:08:51 - panzha:taobaoorder received from mqnull 0A7C16D500002A9F0000000001E7C40B OrderMessage{orderId=1468033271952, buyerId='buyer3024', productId='product158', salerId='tb_saler6118', createTime=1468033272033, totalPrice=27276.3}
+2016-07-09 11:08:51 - panzha:tmallorder received from mqnull 0A7C16D500002A9F0000000001E7BBC9 OrderMessage{orderId=1468033271948, buyerId='buyer3625', productId='product1183', salerId='tm_saler3090', createTime=1468033272028, totalPrice=15671.86}
+2016-07-09 11:09:32 - Using SLF4J as the default logging framework
+2016-07-09 11:09:32 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 11:09:32 - java.nio.Buffer.address: available
+2016-07-09 11:09:32 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 11:09:32 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 11:09:32 - java.nio.Bits.unaligned: true
+2016-07-09 11:09:32 - Java version: 7
+2016-07-09 11:09:32 - -Dio.netty.noUnsafe: false
+2016-07-09 11:09:32 - sun.misc.Unsafe: available
+2016-07-09 11:09:32 - -Dio.netty.noJavassist: false
+2016-07-09 11:09:32 - Javassist: unavailable
+2016-07-09 11:09:32 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 11:09:32 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 11:09:32 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 11:09:32 - -Dio.netty.noPreferDirect: false
+2016-07-09 11:09:32 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 11:09:32 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 11:09:32 - -Dio.netty.initialSeedUniquifier: 0x1e37de3f041bfcb9 (took 10 ms)
+2016-07-09 11:09:32 - -Dio.netty.allocator.type: unpooled
+2016-07-09 11:09:32 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 11:09:32 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 11:09:32 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 11:09:32 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 11:21:02 - Using SLF4J as the default logging framework
+2016-07-09 11:21:02 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 11:21:02 - java.nio.Buffer.address: available
+2016-07-09 11:21:02 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 11:21:02 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 11:21:02 - java.nio.Bits.unaligned: true
+2016-07-09 11:21:02 - Java version: 7
+2016-07-09 11:21:02 - -Dio.netty.noUnsafe: false
+2016-07-09 11:21:02 - sun.misc.Unsafe: available
+2016-07-09 11:21:02 - -Dio.netty.noJavassist: false
+2016-07-09 11:21:02 - Javassist: unavailable
+2016-07-09 11:21:02 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 11:21:02 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 11:21:02 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 11:21:02 - -Dio.netty.noPreferDirect: false
+2016-07-09 11:21:02 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 11:21:02 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 11:21:02 - -Dio.netty.initialSeedUniquifier: 0x702b7b1e93550eff (took 5 ms)
+2016-07-09 11:21:02 - -Dio.netty.allocator.type: unpooled
+2016-07-09 11:21:02 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 11:21:02 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 11:21:02 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 11:21:02 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 11:25:22 - Using SLF4J as the default logging framework
+2016-07-09 11:25:22 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 11:25:22 - java.nio.Buffer.address: available
+2016-07-09 11:25:22 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 11:25:22 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 11:25:22 - java.nio.Bits.unaligned: true
+2016-07-09 11:25:22 - Java version: 7
+2016-07-09 11:25:22 - -Dio.netty.noUnsafe: false
+2016-07-09 11:25:22 - sun.misc.Unsafe: available
+2016-07-09 11:25:22 - -Dio.netty.noJavassist: false
+2016-07-09 11:25:22 - Javassist: unavailable
+2016-07-09 11:25:22 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 11:25:22 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 11:25:22 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 11:25:22 - -Dio.netty.noPreferDirect: false
+2016-07-09 11:25:22 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 11:25:22 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 11:25:22 - -Dio.netty.initialSeedUniquifier: 0x78ebbc1214c7d231 (took 10 ms)
+2016-07-09 11:25:22 - -Dio.netty.allocator.type: unpooled
+2016-07-09 11:25:22 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 11:25:22 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 11:25:22 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 11:25:22 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 11:28:47 - Using SLF4J as the default logging framework
+2016-07-09 11:28:47 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 11:28:47 - java.nio.Buffer.address: available
+2016-07-09 11:28:47 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 11:28:47 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 11:28:47 - java.nio.Bits.unaligned: true
+2016-07-09 11:28:47 - Java version: 7
+2016-07-09 11:28:47 - -Dio.netty.noUnsafe: false
+2016-07-09 11:28:47 - sun.misc.Unsafe: available
+2016-07-09 11:28:47 - -Dio.netty.noJavassist: false
+2016-07-09 11:28:47 - Javassist: unavailable
+2016-07-09 11:28:47 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 11:28:47 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 11:28:47 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 11:28:47 - -Dio.netty.noPreferDirect: false
+2016-07-09 11:28:47 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 11:28:47 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 11:28:47 - -Dio.netty.initialSeedUniquifier: 0xcbfaea9783f64e24 (took 5 ms)
+2016-07-09 11:28:47 - -Dio.netty.allocator.type: unpooled
+2016-07-09 11:28:47 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 11:28:47 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 11:28:47 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 11:28:47 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 11:35:20 - Using SLF4J as the default logging framework
+2016-07-09 11:35:20 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 11:35:20 - java.nio.Buffer.address: available
+2016-07-09 11:35:20 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 11:35:20 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 11:35:20 - java.nio.Bits.unaligned: true
+2016-07-09 11:35:20 - Java version: 7
+2016-07-09 11:35:20 - -Dio.netty.noUnsafe: false
+2016-07-09 11:35:20 - sun.misc.Unsafe: available
+2016-07-09 11:35:20 - -Dio.netty.noJavassist: false
+2016-07-09 11:35:20 - Javassist: unavailable
+2016-07-09 11:35:20 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 11:35:20 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 11:35:20 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 11:35:20 - -Dio.netty.noPreferDirect: false
+2016-07-09 11:35:20 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 11:35:20 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 11:35:20 - -Dio.netty.initialSeedUniquifier: 0xd9558c361d0df35a (took 8 ms)
+2016-07-09 11:35:20 - -Dio.netty.allocator.type: unpooled
+2016-07-09 11:35:20 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 11:35:20 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 11:35:20 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 11:35:20 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 11:38:39 - Using SLF4J as the default logging framework
+2016-07-09 11:38:39 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 11:38:39 - java.nio.Buffer.address: available
+2016-07-09 11:38:39 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 11:38:39 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 11:38:39 - java.nio.Bits.unaligned: true
+2016-07-09 11:38:39 - Java version: 7
+2016-07-09 11:38:39 - -Dio.netty.noUnsafe: false
+2016-07-09 11:38:39 - sun.misc.Unsafe: available
+2016-07-09 11:38:39 - -Dio.netty.noJavassist: false
+2016-07-09 11:38:39 - Javassist: unavailable
+2016-07-09 11:38:39 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 11:38:39 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 11:38:39 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 11:38:39 - -Dio.netty.noPreferDirect: false
+2016-07-09 11:38:39 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 11:38:39 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 11:38:39 - -Dio.netty.initialSeedUniquifier: 0xb35f56ebff0ec922 (took 5 ms)
+2016-07-09 11:38:39 - -Dio.netty.allocator.type: unpooled
+2016-07-09 11:38:39 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 11:38:39 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 11:38:39 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 11:38:39 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 11:46:56 - Using SLF4J as the default logging framework
+2016-07-09 11:46:56 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 11:46:56 - java.nio.Buffer.address: available
+2016-07-09 11:46:56 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 11:46:56 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 11:46:56 - java.nio.Bits.unaligned: true
+2016-07-09 11:46:56 - Java version: 7
+2016-07-09 11:46:56 - -Dio.netty.noUnsafe: false
+2016-07-09 11:46:56 - sun.misc.Unsafe: available
+2016-07-09 11:46:56 - -Dio.netty.noJavassist: false
+2016-07-09 11:46:56 - Javassist: unavailable
+2016-07-09 11:46:56 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 11:46:56 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 11:46:56 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 11:46:56 - -Dio.netty.noPreferDirect: false
+2016-07-09 11:46:56 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 11:46:56 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 11:46:56 - -Dio.netty.initialSeedUniquifier: 0x5022651d1eda5ec6 (took 10 ms)
+2016-07-09 11:46:56 - -Dio.netty.allocator.type: unpooled
+2016-07-09 11:46:56 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 11:46:56 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 11:46:56 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 11:46:56 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 12:02:43 - Using SLF4J as the default logging framework
+2016-07-09 12:02:43 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 12:02:43 - java.nio.Buffer.address: available
+2016-07-09 12:02:43 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 12:02:43 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 12:02:43 - java.nio.Bits.unaligned: true
+2016-07-09 12:02:43 - Java version: 7
+2016-07-09 12:02:43 - -Dio.netty.noUnsafe: false
+2016-07-09 12:02:43 - sun.misc.Unsafe: available
+2016-07-09 12:02:43 - -Dio.netty.noJavassist: false
+2016-07-09 12:02:43 - Javassist: unavailable
+2016-07-09 12:02:43 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 12:02:43 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 12:02:43 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 12:02:43 - -Dio.netty.noPreferDirect: false
+2016-07-09 12:02:43 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 12:02:43 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 12:02:43 - -Dio.netty.initialSeedUniquifier: 0x4f8877979e89bf02 (took 5 ms)
+2016-07-09 12:02:43 - -Dio.netty.allocator.type: unpooled
+2016-07-09 12:02:43 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 12:02:43 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 12:02:43 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 12:02:43 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 13:38:20 - Using SLF4J as the default logging framework
+2016-07-09 13:38:20 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 13:38:20 - java.nio.Buffer.address: available
+2016-07-09 13:38:20 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 13:38:20 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 13:38:20 - java.nio.Bits.unaligned: true
+2016-07-09 13:38:20 - Java version: 7
+2016-07-09 13:38:20 - -Dio.netty.noUnsafe: false
+2016-07-09 13:38:20 - sun.misc.Unsafe: available
+2016-07-09 13:38:20 - -Dio.netty.noJavassist: false
+2016-07-09 13:38:20 - Javassist: unavailable
+2016-07-09 13:38:20 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 13:38:20 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 13:38:20 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 13:38:20 - -Dio.netty.noPreferDirect: false
+2016-07-09 13:38:21 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 13:38:21 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 13:38:21 - -Dio.netty.initialSeedUniquifier: 0xa34c38926e392986 (took 71 ms)
+2016-07-09 13:38:21 - -Dio.netty.allocator.type: unpooled
+2016-07-09 13:38:21 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 13:38:21 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 13:38:21 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 13:38:21 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 13:41:02 - Using SLF4J as the default logging framework
+2016-07-09 13:41:02 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 13:41:02 - java.nio.Buffer.address: available
+2016-07-09 13:41:02 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 13:41:02 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 13:41:02 - java.nio.Bits.unaligned: true
+2016-07-09 13:41:02 - Java version: 7
+2016-07-09 13:41:02 - -Dio.netty.noUnsafe: false
+2016-07-09 13:41:02 - sun.misc.Unsafe: available
+2016-07-09 13:41:02 - -Dio.netty.noJavassist: false
+2016-07-09 13:41:02 - Javassist: unavailable
+2016-07-09 13:41:02 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 13:41:02 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 13:41:02 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 13:41:02 - -Dio.netty.noPreferDirect: false
+2016-07-09 13:41:02 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 13:41:02 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 13:41:02 - -Dio.netty.initialSeedUniquifier: 0x4c1be9fdcd8d163b (took 9 ms)
+2016-07-09 13:41:02 - -Dio.netty.allocator.type: unpooled
+2016-07-09 13:41:02 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 13:41:02 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 13:41:02 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 13:41:02 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 13:48:18 - Using SLF4J as the default logging framework
+2016-07-09 13:48:18 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 13:48:18 - java.nio.Buffer.address: available
+2016-07-09 13:48:18 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 13:48:18 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 13:48:18 - java.nio.Bits.unaligned: true
+2016-07-09 13:48:18 - Java version: 7
+2016-07-09 13:48:18 - -Dio.netty.noUnsafe: false
+2016-07-09 13:48:18 - sun.misc.Unsafe: available
+2016-07-09 13:48:18 - -Dio.netty.noJavassist: false
+2016-07-09 13:48:18 - Javassist: unavailable
+2016-07-09 13:48:18 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 13:48:18 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 13:48:18 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 13:48:18 - -Dio.netty.noPreferDirect: false
+2016-07-09 13:48:18 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 13:48:18 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 13:48:18 - -Dio.netty.initialSeedUniquifier: 0xfbc742ca54566fc6 (took 5 ms)
+2016-07-09 13:48:18 - -Dio.netty.allocator.type: unpooled
+2016-07-09 13:48:18 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 13:48:18 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 13:48:18 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 13:48:18 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 13:48:30 - Using SLF4J as the default logging framework
+2016-07-09 13:48:30 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 13:48:30 - java.nio.Buffer.address: available
+2016-07-09 13:48:30 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 13:48:30 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 13:48:30 - java.nio.Bits.unaligned: true
+2016-07-09 13:48:30 - Java version: 7
+2016-07-09 13:48:30 - -Dio.netty.noUnsafe: false
+2016-07-09 13:48:30 - sun.misc.Unsafe: available
+2016-07-09 13:48:30 - -Dio.netty.noJavassist: false
+2016-07-09 13:48:30 - Javassist: unavailable
+2016-07-09 13:48:30 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 13:48:30 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 13:48:30 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 13:48:30 - -Dio.netty.noPreferDirect: false
+2016-07-09 13:48:30 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 13:48:30 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 13:48:30 - -Dio.netty.initialSeedUniquifier: 0x95a99be443d6fbc3 (took 4 ms)
+2016-07-09 13:48:30 - -Dio.netty.allocator.type: unpooled
+2016-07-09 13:48:30 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 13:48:30 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 13:48:30 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 13:48:30 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:04:19 - Using SLF4J as the default logging framework
+2016-07-09 14:04:19 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:04:19 - java.nio.Buffer.address: available
+2016-07-09 14:04:19 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:04:19 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:04:19 - java.nio.Bits.unaligned: true
+2016-07-09 14:04:19 - Java version: 7
+2016-07-09 14:04:19 - -Dio.netty.noUnsafe: false
+2016-07-09 14:04:19 - sun.misc.Unsafe: available
+2016-07-09 14:04:19 - -Dio.netty.noJavassist: false
+2016-07-09 14:04:19 - Javassist: unavailable
+2016-07-09 14:04:19 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:04:19 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:04:19 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:04:19 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:04:19 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:04:19 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:04:19 - -Dio.netty.initialSeedUniquifier: 0x0a1167baec659867 (took 10 ms)
+2016-07-09 14:04:19 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:04:19 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:04:19 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:04:19 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:04:19 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:12:33 - Using SLF4J as the default logging framework
+2016-07-09 14:12:33 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:12:33 - java.nio.Buffer.address: available
+2016-07-09 14:12:33 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:12:33 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:12:33 - java.nio.Bits.unaligned: true
+2016-07-09 14:12:33 - Java version: 7
+2016-07-09 14:12:33 - -Dio.netty.noUnsafe: false
+2016-07-09 14:12:33 - sun.misc.Unsafe: available
+2016-07-09 14:12:33 - -Dio.netty.noJavassist: false
+2016-07-09 14:12:33 - Javassist: unavailable
+2016-07-09 14:12:33 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:12:33 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:12:33 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:12:33 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:12:33 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:12:33 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:12:33 - -Dio.netty.initialSeedUniquifier: 0x7a924f99b042809a (took 5 ms)
+2016-07-09 14:12:33 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:12:33 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:12:33 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:12:33 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:12:33 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:17:30 - Using SLF4J as the default logging framework
+2016-07-09 14:17:30 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:17:30 - java.nio.Buffer.address: available
+2016-07-09 14:17:30 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:17:30 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:17:30 - java.nio.Bits.unaligned: true
+2016-07-09 14:17:30 - Java version: 7
+2016-07-09 14:17:30 - -Dio.netty.noUnsafe: false
+2016-07-09 14:17:30 - sun.misc.Unsafe: available
+2016-07-09 14:17:30 - -Dio.netty.noJavassist: false
+2016-07-09 14:17:30 - Javassist: unavailable
+2016-07-09 14:17:30 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:17:30 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:17:30 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:17:30 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:17:30 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:17:30 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:17:30 - -Dio.netty.initialSeedUniquifier: 0x9ecec0a485ce6d37 (took 11 ms)
+2016-07-09 14:17:30 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:17:30 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:17:30 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:17:30 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:17:30 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:18:20 - Using SLF4J as the default logging framework
+2016-07-09 14:18:20 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:18:20 - java.nio.Buffer.address: available
+2016-07-09 14:18:20 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:18:20 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:18:20 - java.nio.Bits.unaligned: true
+2016-07-09 14:18:20 - Java version: 7
+2016-07-09 14:18:20 - -Dio.netty.noUnsafe: false
+2016-07-09 14:18:20 - sun.misc.Unsafe: available
+2016-07-09 14:18:20 - -Dio.netty.noJavassist: false
+2016-07-09 14:18:20 - Javassist: unavailable
+2016-07-09 14:18:20 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:18:20 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:18:20 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:18:20 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:18:20 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:18:20 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:18:20 - -Dio.netty.initialSeedUniquifier: 0x1dd5253843d8f5ab (took 5 ms)
+2016-07-09 14:18:20 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:18:20 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:18:20 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:18:20 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:18:20 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:22:48 - Using SLF4J as the default logging framework
+2016-07-09 14:22:48 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:22:48 - java.nio.Buffer.address: available
+2016-07-09 14:22:48 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:22:48 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:22:48 - java.nio.Bits.unaligned: true
+2016-07-09 14:22:48 - Java version: 7
+2016-07-09 14:22:48 - -Dio.netty.noUnsafe: false
+2016-07-09 14:22:48 - sun.misc.Unsafe: available
+2016-07-09 14:22:48 - -Dio.netty.noJavassist: false
+2016-07-09 14:22:48 - Javassist: unavailable
+2016-07-09 14:22:48 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:22:48 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:22:48 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:22:48 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:22:48 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:22:48 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:22:48 - -Dio.netty.initialSeedUniquifier: 0x406abcbc566f53f5 (took 6 ms)
+2016-07-09 14:22:48 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:22:48 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:22:49 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:22:49 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:22:49 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:25:43 - Using SLF4J as the default logging framework
+2016-07-09 14:25:43 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:25:43 - java.nio.Buffer.address: available
+2016-07-09 14:25:43 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:25:43 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:25:43 - java.nio.Bits.unaligned: true
+2016-07-09 14:25:43 - Java version: 7
+2016-07-09 14:25:43 - -Dio.netty.noUnsafe: false
+2016-07-09 14:25:43 - sun.misc.Unsafe: available
+2016-07-09 14:25:43 - -Dio.netty.noJavassist: false
+2016-07-09 14:25:43 - Javassist: unavailable
+2016-07-09 14:25:43 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:25:43 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:25:43 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:25:43 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:25:43 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:25:43 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:25:43 - -Dio.netty.initialSeedUniquifier: 0x65b1627310f96cbd (took 5 ms)
+2016-07-09 14:25:43 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:25:43 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:25:43 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:25:43 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:25:43 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:28:35 - Using SLF4J as the default logging framework
+2016-07-09 14:28:35 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:28:35 - java.nio.Buffer.address: available
+2016-07-09 14:28:35 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:28:35 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:28:35 - java.nio.Bits.unaligned: true
+2016-07-09 14:28:35 - Java version: 7
+2016-07-09 14:28:35 - -Dio.netty.noUnsafe: false
+2016-07-09 14:28:35 - sun.misc.Unsafe: available
+2016-07-09 14:28:35 - -Dio.netty.noJavassist: false
+2016-07-09 14:28:35 - Javassist: unavailable
+2016-07-09 14:28:35 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:28:35 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:28:35 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:28:35 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:28:35 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:28:35 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:28:35 - -Dio.netty.initialSeedUniquifier: 0x5259b700a4009d06 (took 9 ms)
+2016-07-09 14:28:35 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:28:35 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:28:35 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:28:35 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:28:36 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:34:14 - Using SLF4J as the default logging framework
+2016-07-09 14:34:14 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:34:14 - java.nio.Buffer.address: available
+2016-07-09 14:34:14 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:34:14 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:34:14 - java.nio.Bits.unaligned: true
+2016-07-09 14:34:14 - Java version: 7
+2016-07-09 14:34:14 - -Dio.netty.noUnsafe: false
+2016-07-09 14:34:14 - sun.misc.Unsafe: available
+2016-07-09 14:34:14 - -Dio.netty.noJavassist: false
+2016-07-09 14:34:14 - Javassist: unavailable
+2016-07-09 14:34:14 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:34:14 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:34:14 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:34:14 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:34:14 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:34:14 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:34:14 - -Dio.netty.initialSeedUniquifier: 0x80de62c819fd8549 (took 4 ms)
+2016-07-09 14:34:14 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:34:14 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:34:14 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:34:14 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:34:14 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:42:48 - Using SLF4J as the default logging framework
+2016-07-09 14:42:48 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:42:48 - java.nio.Buffer.address: available
+2016-07-09 14:42:48 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:42:48 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:42:48 - java.nio.Bits.unaligned: true
+2016-07-09 14:42:48 - Java version: 7
+2016-07-09 14:42:48 - -Dio.netty.noUnsafe: false
+2016-07-09 14:42:48 - sun.misc.Unsafe: available
+2016-07-09 14:42:48 - -Dio.netty.noJavassist: false
+2016-07-09 14:42:48 - Javassist: unavailable
+2016-07-09 14:42:48 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:42:48 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:42:48 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:42:48 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:42:48 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:42:48 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:42:48 - -Dio.netty.initialSeedUniquifier: 0x541d8f915386b37c (took 5 ms)
+2016-07-09 14:42:48 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:42:48 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:42:48 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:42:48 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:42:48 - java.nio.ByteBuffer.cleaner(): available
+2016-07-09 14:47:01 - Using SLF4J as the default logging framework
+2016-07-09 14:47:01 - -Dio.netty.eventLoopThreads: 16
+2016-07-09 14:47:01 - java.nio.Buffer.address: available
+2016-07-09 14:47:01 - sun.misc.Unsafe.theUnsafe: available
+2016-07-09 14:47:01 - sun.misc.Unsafe.copyMemory: available
+2016-07-09 14:47:01 - java.nio.Bits.unaligned: true
+2016-07-09 14:47:01 - Java version: 7
+2016-07-09 14:47:01 - -Dio.netty.noUnsafe: false
+2016-07-09 14:47:01 - sun.misc.Unsafe: available
+2016-07-09 14:47:01 - -Dio.netty.noJavassist: false
+2016-07-09 14:47:01 - Javassist: unavailable
+2016-07-09 14:47:01 - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-07-09 14:47:01 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2016-07-09 14:47:01 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-07-09 14:47:01 - -Dio.netty.noPreferDirect: false
+2016-07-09 14:47:01 - -Dio.netty.noKeySetOptimization: false
+2016-07-09 14:47:01 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-07-09 14:47:01 - -Dio.netty.initialSeedUniquifier: 0x73efe214cd1074f4 (took 10 ms)
+2016-07-09 14:47:01 - -Dio.netty.allocator.type: unpooled
+2016-07-09 14:47:01 - -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-07-09 14:47:01 - -Dio.netty.recycler.maxCapacity.default: 262144
+2016-07-09 14:47:01 - -Dio.netty.leakDetectionLevel: simple
+2016-07-09 14:47:02 - java.nio.ByteBuffer.cleaner(): available

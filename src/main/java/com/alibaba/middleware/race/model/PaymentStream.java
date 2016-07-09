@@ -7,6 +7,7 @@ public class PaymentStream implements Serializable{
 	private double payAmount;
 	private short payPlatform; 
 	private long createTime ;
+	private String type;
 	
 	public PaymentStream() {
 	}
@@ -55,6 +56,14 @@ public class PaymentStream implements Serializable{
 	public String toString() {
 		return "PaymentStream [orderId=" + orderId + ", payAmount=" + payAmount
 				+ ", payPlatform=" + payPlatform + ", createTime=" + createTime
-				+ "]";
+				+ ", type=" + type + "]";
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
 	}
 }

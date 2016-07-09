@@ -18,11 +18,13 @@ public class RaceConfig implements Serializable {
     public static final String MqTmallTradeTopic = "MiddlewareRaceTestData_TMOrder";
     public static final String MqTaobaoTradeTopic = "MiddlewareRaceTestData_TBOrder";
     
-    //public static final String TairConfigServer = "10.124.10.11:5198";  //local config
-    public static final String TairConfigServer = "10.101.72.127:5198"; //alibaba config
-    public static final String TairSalveConfigServer = "10.101.72.128:5198";//alibaba config
-    //public static final String TairGroup = "group_1";    //local config
-    public static final String TairGroup = "group_tianchi"; //alibaba config
-    //public static final Integer TairNamespace = 0;//local config
-    public static final Integer TairNamespace = 57917;//alibaba config
+    public static final String TairConfigServer = "10.124.10.11:5198";  //local config
+    //public static final String TairConfigServer = "10.101.72.127:5198"; //alibaba config
+    //public static final String TairSalveConfigServer = "10.101.72.128:5198";//alibaba config
+    public static final String TairGroup = "group_1";    //local config
+    //public static final String TairGroup = "group_tianchi"; //alibaba config
+    public static final Integer TairNamespace = 0;//local config
+    //public static final Integer TairNamespace = 57917;//alibaba config
+    
+    public static final Boolean LogFlag = true;
 }
