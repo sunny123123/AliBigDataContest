@@ -11,6 +11,7 @@ public class ConsumerPushFactory {
 		DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(RaceConfig.MetaConsumerGroup);
 		consumer = new DefaultMQPushConsumer(RaceConfig.MetaConsumerGroup);
 		
+		
 		//consumer.setNamesrvAddr(RaceConfig.MQNameServerAddr);
 		
 		consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
