@@ -41,6 +41,7 @@ public class MergeOrderPayment implements IRichBolt {
 	Set<String> rsKey = null;
 	BufferedWriter tairLog = null;
 	BufferedWriter rsLog = null;
+	BufferedWriter totalLog = null;
 	ConcurrentHashMap<String, Double> payRs = new ConcurrentHashMap<String, Double>();
 	
 	//Map<String, Double> payRs = new HashMap<String,Double>();
@@ -58,11 +59,17 @@ public class MergeOrderPayment implements IRichBolt {
 					+ context.getThisTaskId()+"_tairLog");
 			rsLog = OperateFile.getWriter(context.getThisComponentId().toLowerCase()+ "_"
 					+ context.getThisTaskId()+"_rsLog");
+			totalLog = OperateFile.getWriter(context.getThisComponentId().toLowerCase()+ "_"
+					+ context.getThisTaskId()+"_totalLog");
 			OperateFile.writeContent(mergeLog, "merge thread start");
 		}
-		ExecutorService service = Executors.newFixedThreadPool(2);
+		ExecutorService service = Executors.newCachedThreadPool();
 		service.submit(new QueueThread());
 		service.submit(new WriteRsToTair());
+		//open static log
+		if(RaceConfig.LogFlag)
+			service.submit(new StatisticLog());
+		service.shutdown();
 		
 	}
 
@@ -95,10 +102,10 @@ public class MergeOrderPayment implements IRichBolt {
 					+ this.paymentQueue.size());
 			OperateFile.writeContent(mergeLog, "total deal entries:"
 					+ this.payDealNum);
+			DefaultTairManager tairManager = TairManageFactory.getDefaultTairManager();
 			Iterator<String> it = rsKey.iterator();
 			while(it.hasNext()){
 				String key = it.next();
-				DefaultTairManager tairManager = TairManageFactory.getDefaultTairManager();
 				Result<DataEntry> rs = tairManager.get(RaceConfig.TairNamespace, key);
 				OperateFile.writeContent(tairLog, key+":"+rs.getValue());
 			}
@@ -143,9 +150,6 @@ public class MergeOrderPayment implements IRichBolt {
 					if(RaceConfig.LogFlag){
 						OperateFile.writeContent(mergeLog,
 								"mergerOderPayment bolt receive:"+ payStream.toString());
-						
-						
-						
 						payDealNum.getAndIncrement();
 					}
 				}
@@ -161,8 +165,10 @@ public class MergeOrderPayment implements IRichBolt {
 				else{
 					payRs.put(preTaobao, pay.getPayAmount());
 				}
-				rsKey.add(preTaobao);
-				//System.out.println("a:"+payRs.get(preTaobao));
+				if(RaceConfig.LogFlag){
+					rsKey.add(preTaobao);
+					OperateFile.writeContent(rsLog, preTaobao+":"+pay.getPayAmount());
+				}
 			}
 			if(pay.getType().equals("TMALL")){
 				String preTmall = RaceConfig.prex_tmall+pay.getCreateTime();
@@ -172,8 +178,10 @@ public class MergeOrderPayment implements IRichBolt {
 				else{
 					payRs.put(preTmall, pay.getPayAmount());
 				}
-				rsKey.add(preTmall);
-				//System.out.println("b:"+payRs.get(preTmall));
+				if(RaceConfig.LogFlag){
+					rsKey.add(preTmall);
+					OperateFile.writeContent(rsLog, preTmall+":"+pay.getPayAmount());
+				}
 			}
 			
 		}
@@ -186,24 +194,39 @@ public class MergeOrderPayment implements IRichBolt {
 
 		@Override
 		public void run() {
-//			try {
-//				Thread.sleep(1*1000);
-//			} catch (InterruptedException e) {
-//				e.printStackTrace();
-//			}
-			Iterator<String> it = payRs.keySet().iterator();
-			//System.out.println("panzha"+payRs.size());
-			while(it.hasNext()){
-				String key = it.next();
-				//Double v = payRs.get(key);
-				Double v = payRs.remove(key);
-				if(RaceConfig.LogFlag){
-					OperateFile.writeContent(rsLog, key+":"+v);
+			while(true){
+				try {
+					Thread.sleep(5*1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
 				}
-				//System.out.println("c:"+key+" "+v);
-				RaceUtils.updateDataTotair(RaceConfig.TairNamespace, key, v);
+				Iterator<String> it = payRs.keySet().iterator();
+				while(it.hasNext()){
+					String key = it.next();
+					Double v = payRs.remove(key);
+					RaceUtils.updateDataTotair(RaceConfig.TairNamespace, key, v);
+				}
 			}
 		}
+	}
+	
+	class StatisticLog implements Runnable{
+
+		@Override
+		public void run() {
+			while(true){
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				if(RaceConfig.LogFlag){
+					OperateFile.writeContent(totalLog, "receive enties:"+payDealNum+","+"queue size:"+paymentQueue.size()
+							+","+"rsMap size:"+payRs.size()+","+"rsSet size:"+rsKey.size());
+				}
+			}
+		}
+		
 	}
 
 }

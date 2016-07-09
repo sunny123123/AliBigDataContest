@@ -16,6 +16,7 @@ import backtype.storm.topology.OutputFieldsDeclarer;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Values;
 
+import com.alibaba.middleware.race.ConsumerPushFactory;
 import com.alibaba.middleware.race.RaceConfig;
 import com.alibaba.middleware.race.RaceUtils;
 import com.alibaba.middleware.race.model.OrderMessage;
@@ -29,7 +30,6 @@ import com.alibaba.rocketmq.client.exception.MQClientException;
 import com.alibaba.rocketmq.common.message.MessageExt;
 import com.sunny.backup.PaymentMessage;
 import com.sunny.utils.CommonShareData;
-import com.sunny.utils.ConsumerPushFactory;
 import com.sunny.utils.OperateFile;
 import com.sunny.utils.OperateFileOld;
 
@@ -111,6 +111,7 @@ public class RaceSendSpout implements IRichSpout,MessageListenerConcurrently{
 			if(orderQueue.size()!=0){
 				order = orderQueue.take();
 				collector.emit("order",new Values(order));
+				
 				if(RaceConfig.LogFlag)
 					OperateFile.writeContent(orderSendLog, "order spout send:"+order.toString());
 				//LOG.info("panzha:send to bolt: "+order.toString());
@@ -124,6 +125,7 @@ public class RaceSendSpout implements IRichSpout,MessageListenerConcurrently{
 			if(paymentQueue.size()!=0){
 				pay = paymentQueue.take();
 				collector.emit("payment",new Values(pay));
+				
 				if(RaceConfig.LogFlag)
 					OperateFile.writeContent(paySendLog, "payment spout send:"+pay.toString());
 				//LOG.info("panzha:send to bolt: "+pay.toString());

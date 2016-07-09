@@ -8,14 +8,13 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
-
 import com.alibaba.middleware.race.RaceConfig;
 
 public class OperateFile {
 	//private static BufferedReader br = null;
 	private static BufferedWriter bw = null;
-	private static final String dir = "/BBBB/jstorm-2.1.1/logs/"+RaceConfig.JstormTopologyName+"/";
+	//private static final String dir = "/BBBB/jstorm-2.1.1/logs/"+RaceConfig.JstormTopologyName+"/";
+	private static final String dir = "./"+RaceConfig.JstormTopologyName+"/";
 	public static synchronized BufferedWriter getWriter(String fileName){
 		
 			File file = new File(dir+fileName);
@@ -45,12 +44,12 @@ public class OperateFile {
 			e.printStackTrace();
 		}
 	}
-	public static void clearDir(){
+	/*public static void clearDir(){
 		try {
 			FileUtils.cleanDirectory(new File(dir));
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-	}
+	}*/
 	
 }

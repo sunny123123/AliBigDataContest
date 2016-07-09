@@ -33,13 +33,13 @@ public class RaceTopology {
 	private static TopologyBuilder setupBuilder() throws Exception {
 		TopologyBuilder builder = new TopologyBuilder();
 
-		builder.setSpout("SendSpout", new RaceSendSpout(),1);
+		builder.setSpout("SendSpout", new RaceSendSpout(),RaceConfig.SendSouptParallelism);
 		
-		builder.setBolt("OrderBolt", new RaceOrderBolt(),1).shuffleGrouping("SendSpout", "order");
-		builder.setBolt("PaymentBolt", new RacePayBolt(),1).shuffleGrouping("SendSpout", "payment");
+		builder.setBolt("OrderBolt", new RaceOrderBolt(),RaceConfig.OrderBoltParallelism).shuffleGrouping("SendSpout", "order");
+		builder.setBolt("PaymentBolt", new RacePayBolt(),RaceConfig.PayBoltParallelism).shuffleGrouping("SendSpout", "payment");
 		
 
-		builder.setBolt("MergeOderPayment", new MergeOrderPayment(),1).fieldsGrouping("OrderBolt", new Fields("orderId")).
+		builder.setBolt("MergeOderPayment", new MergeOrderPayment(),RaceConfig.MerageBoltParallelism).fieldsGrouping("OrderBolt", new Fields("orderId")).
 			fieldsGrouping("PaymentBolt", new Fields("orderId"));
 		
 		//builder.setBolt("MetaBolt2", new RacePayBolt(),2).shuffleGrouping("MetaPaymentSpout");
@@ -54,7 +54,7 @@ public class RaceTopology {
 	private static void submitTopology(TopologyBuilder builder,String submitMode) {
 		Config conf = new Config();
 
-		conf.setNumWorkers(1);
+		conf.setNumWorkers(RaceConfig.WorkersNum);
 		//conf.setNumAckers(1);
 
 		try {

@@ -18,13 +18,22 @@ public class RaceConfig implements Serializable {
     public static final String MqTmallTradeTopic = "MiddlewareRaceTestData_TMOrder";
     public static final String MqTaobaoTradeTopic = "MiddlewareRaceTestData_TBOrder";
     
-    public static final String TairConfigServer = "10.124.10.11:5198";  //local config
-    //public static final String TairConfigServer = "10.101.72.127:5198"; //alibaba config
-    //public static final String TairSalveConfigServer = "10.101.72.128:5198";//alibaba config
-    public static final String TairGroup = "group_1";    //local config
-    //public static final String TairGroup = "group_tianchi"; //alibaba config
-    public static final Integer TairNamespace = 0;//local config
-    //public static final Integer TairNamespace = 57917;//alibaba config
+    //public static final String TairConfigServer = "10.124.10.11:5198";  //local config
+    public static final String TairConfigServer = "10.101.72.127:5198"; //alibaba config
+    public static final String TairSalveConfigServer = "10.101.72.128:5198";//alibaba config
+    //public static final String TairGroup = "group_1";    //local config
+    public static final String TairGroup = "group_tianchi"; //alibaba config
+    //public static final Integer TairNamespace = 0;//local config
+    public static final Integer TairNamespace = 57917;//alibaba config
     
-    public static final Boolean LogFlag = true;
+    //topology configuration
+    public static final Integer WorkersNum = 3;
+    public static final Integer SendSouptParallelism = 3;
+    public static final Integer OrderBoltParallelism = 3;
+    public static final Integer PayBoltParallelism = 6;
+    public static final Integer MerageBoltParallelism = 6;
+    //log flag
+    //public static final Boolean LogFlag = true;
+    public static final Boolean LogFlag = false;
+     
 }

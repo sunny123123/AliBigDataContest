@@ -19,6 +19,7 @@ import backtype.storm.topology.OutputFieldsDeclarer;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Values;
 
+import com.alibaba.middleware.race.ConsumerPushFactory;
 import com.alibaba.middleware.race.RaceConfig;
 import com.alibaba.middleware.race.RaceUtils;
 import com.alibaba.middleware.race.model.OrderMessage;
@@ -31,7 +32,6 @@ import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently
 import com.alibaba.rocketmq.client.exception.MQClientException;
 import com.alibaba.rocketmq.common.message.MessageExt;
 import com.sunny.utils.CommonShareData;
-import com.sunny.utils.ConsumerPushFactory;
 import com.sunny.utils.OperateFile;
 import com.sunny.utils.OperateFileOld;
 

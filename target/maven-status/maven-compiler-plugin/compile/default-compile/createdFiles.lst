@@ -4,13 +4,15 @@ com/alibaba/middleware/race/RaceUtils.class
 com/sunny/utils/Test.class
 com/alibaba/middleware/race/jstorm/RacePayBolt.class
 com/alibaba/middleware/race/jstorm/MergeOrderPayment$QueueThread.class
-com/alibaba/middleware/race/jstorm/RaceSendSpout.class
 com/sunny/backup/TableItemFactory.class
+com/alibaba/middleware/race/jstorm/RaceSendSpout.class
 com/alibaba/middleware/race/jstorm/RaceOrderBolt.class
+com/alibaba/middleware/race/ConsumerPushFactory.class
 com/sunny/backup/RaceMergeBolt$QueueThread.class
 com/alibaba/middleware/race/model/OrderStream.class
 com/alibaba/middleware/race/Tair/TairOperatorImpl.class
 com/alibaba/middleware/race/RaceConfig.class
+com/alibaba/middleware/race/jstorm/MergeOrderPayment$StatisticLog.class
 com/sunny/utils/OperateFileOld.class
 com/alibaba/middleware/race/model/PaymentStream.class
 com/sunny/utils/CommonShareData.class
@@ -20,7 +22,6 @@ com/sunny/backup/SendPaymentSpout$SendOrder.class
 com/alibaba/middleware/race/model/OrderMessage.class
 com/sunny/utils/OperateFile.class
 com/alibaba/middleware/race/jstorm/RaceTopology.class
-com/sunny/utils/ConsumerPushFactory.class
 com/alibaba/middleware/race/Tair/TairManageFactory.class
 com/sunny/backup/SendPaymentSpout$1.class
 com/sunny/backup/SendPaymentSpout$SendPayment.class

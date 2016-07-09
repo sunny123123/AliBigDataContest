@@ -1,6 +1,5 @@
-package com.alibaba.middleware.race.jstorm;
+package com.alibaba.middleware.race;
 
-import com.alibaba.middleware.race.RaceConfig;
 import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
 import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently;
@@ -10,6 +9,7 @@ import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;
 public class ConsumerPushFactory {
 	public static DefaultMQPushConsumer getConsumer(MessageListenerConcurrently listener){
 		DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(RaceConfig.MetaConsumerGroup);
+		consumer = new DefaultMQPushConsumer(RaceConfig.MetaConsumerGroup);
 		
 		//consumer.setNamesrvAddr(RaceConfig.MQNameServerAddr);
 		
@@ -22,8 +22,7 @@ public class ConsumerPushFactory {
 		} catch (MQClientException e) {
 			e.printStackTrace();
 		}
-		
-		return consumer;
+		return  consumer;
 	}
 
 }

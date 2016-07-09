@@ -22,7 +22,7 @@ public class Demo {
 		
 		//tairManager.put(0,"1467610805001","TAOBAO");
 		//Result<DataEntry> rs = tairManager.get(0, "1467610805001");
-		Result<DataEntry> rs = tairManager.get(0, "platformTaobao_34871wea6u_1467660");
+		Result<DataEntry> rs = tairManager.get(0, "platformTmall_34871wea6u_1468101660");
 		//getRs(1,"tmall002");
 		//tairManager.incr(1, "tmall003", 2, 1,0);
 		//System.out.println(tairManager.get(1,"tmall003"));
