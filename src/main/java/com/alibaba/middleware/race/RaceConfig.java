@@ -32,6 +32,8 @@ public class RaceConfig implements Serializable {
     public static final Integer OrderBoltParallelism = 3;
     public static final Integer PayBoltParallelism = 6;
     public static final Integer MerageBoltParallelism = 6;
+    
+    public static final Integer RatioBoltParallelism = 3;
     //log flag
     //public static final Boolean LogFlag = true;
     public static final Boolean LogFlag = false;

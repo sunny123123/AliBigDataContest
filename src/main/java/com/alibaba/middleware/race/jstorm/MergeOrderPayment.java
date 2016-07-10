@@ -42,7 +42,9 @@ public class MergeOrderPayment implements IRichBolt {
 	BufferedWriter tairLog = null;
 	BufferedWriter rsLog = null;
 	BufferedWriter totalLog = null;
+	BufferedWriter totalLog_test = null;
 	ConcurrentHashMap<String, Double> payRs = new ConcurrentHashMap<String, Double>();
+	ConcurrentHashMap<String, Double> payRs_test = new ConcurrentHashMap<String, Double>();
 	
 	//Map<String, Double> payRs = new HashMap<String,Double>();
 	@Override
@@ -61,6 +63,8 @@ public class MergeOrderPayment implements IRichBolt {
 					+ context.getThisTaskId()+"_rsLog");
 			totalLog = OperateFile.getWriter(context.getThisComponentId().toLowerCase()+ "_"
 					+ context.getThisTaskId()+"_totalLog");
+			totalLog_test = OperateFile.getWriter(context.getThisComponentId().toLowerCase()+ "_"
+					+ context.getThisTaskId()+"_totalLog_test");
 			OperateFile.writeContent(mergeLog, "merge thread start");
 		}
 		ExecutorService service = Executors.newCachedThreadPool();
@@ -107,8 +111,21 @@ public class MergeOrderPayment implements IRichBolt {
 			while(it.hasNext()){
 				String key = it.next();
 				Result<DataEntry> rs = tairManager.get(RaceConfig.TairNamespace, key);
-				OperateFile.writeContent(tairLog, key+":"+rs.getValue());
+				DataEntry drs = rs.getValue();
+				OperateFile.writeContent(tairLog, key+":"+drs.getValue()+":"+drs.getVersion());
+				double fromMap = payRs_test.get(key);
+				double fromTair = (double)drs.getValue();
+				if(!(fromMap==fromTair)){
+					OperateFile.writeContent(totalLog_test, key+":"+fromMap+":"+fromTair+",match error");
+				}
+				
 			}
+			OperateFile.writeContent(totalLog_test,"end");
+			/*Iterator<String> it_rs = payRs_test.keySet().iterator();
+			while(it_rs.hasNext()){
+				String key = it_rs.next();
+				OperateFile.writeContent(totalLog_test, key+":"+payRs_test.get(key));
+			}*/
 		}
 	}
 
@@ -161,9 +178,13 @@ public class MergeOrderPayment implements IRichBolt {
 				String preTaobao = RaceConfig.prex_taobao+pay.getCreateTime();
 				if(payRs.containsKey(preTaobao)){
 					payRs.put(preTaobao, payRs.get(preTaobao)+pay.getPayAmount());
+					if(RaceConfig.LogFlag)
+						payRs_test.put(preTaobao, payRs.get(preTaobao));
 				}
 				else{
 					payRs.put(preTaobao, pay.getPayAmount());
+					if(RaceConfig.LogFlag)
+						payRs_test.put(preTaobao, pay.getPayAmount());
 				}
 				if(RaceConfig.LogFlag){
 					rsKey.add(preTaobao);
@@ -174,9 +195,13 @@ public class MergeOrderPayment implements IRichBolt {
 				String preTmall = RaceConfig.prex_tmall+pay.getCreateTime();
 				if(payRs.containsKey(preTmall)){
 					payRs.put(preTmall, payRs.get(preTmall)+pay.getPayAmount());
+					if(RaceConfig.LogFlag)
+						payRs_test.put(preTmall, payRs.get(preTmall));
 				}
 				else{
 					payRs.put(preTmall, pay.getPayAmount());
+					if(RaceConfig.LogFlag)
+						payRs_test.put(preTmall, pay.getPayAmount());
 				}
 				if(RaceConfig.LogFlag){
 					rsKey.add(preTmall);
@@ -196,7 +221,7 @@ public class MergeOrderPayment implements IRichBolt {
 		public void run() {
 			while(true){
 				try {
-					Thread.sleep(5*1000);
+					Thread.sleep(20*1000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}

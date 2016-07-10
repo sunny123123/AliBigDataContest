@@ -38,10 +38,12 @@ public class RaceTopology {
 		builder.setBolt("OrderBolt", new RaceOrderBolt(),RaceConfig.OrderBoltParallelism).shuffleGrouping("SendSpout", "order");
 		builder.setBolt("PaymentBolt", new RacePayBolt(),RaceConfig.PayBoltParallelism).shuffleGrouping("SendSpout", "payment");
 		
-
+		
 		builder.setBolt("MergeOderPayment", new MergeOrderPayment(),RaceConfig.MerageBoltParallelism).fieldsGrouping("OrderBolt", new Fields("orderId")).
 			fieldsGrouping("PaymentBolt", new Fields("orderId"));
 		
+		
+		//builder.setBolt("RatioBolt", new RaceRatioBolt(), RaceConfig.RatioBoltParallelism).shuffleGrouping("SendSpout", "payment");
 		//builder.setBolt("MetaBolt2", new RacePayBolt(),2).shuffleGrouping("MetaPaymentSpout");
 		
 		//builder.setBolt("MetaBolt1", new RaceMergeBolt(),4).fieldsGrouping("MetaOrderSpout", new Fields("orderId"))

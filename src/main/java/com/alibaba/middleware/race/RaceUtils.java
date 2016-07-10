@@ -18,6 +18,8 @@ public class RaceUtils {
      * @param object
      * @return
      */
+	static DefaultTairManager tairManager = TairManageFactory.getDefaultTairManager();
+	private static  Object obj = new Object();
     public static byte[] writeKryoObject(Object object) {
         Output output = new Output(1024);
         Kryo kryo = new Kryo();
@@ -42,7 +44,8 @@ public class RaceUtils {
 		return minuteTime;
     }
     public  static void updateDataTotair(int namespace,String key,double value){
-		DefaultTairManager tairManager = TairManageFactory.getDefaultTairManager();
+		synchronized (obj) {
+				
 		Result<DataEntry> rs = tairManager.get(namespace, key);
 		
 		/*put value not exist,put into tair directly*/
@@ -72,8 +75,10 @@ public class RaceUtils {
 				version = rs.getValue().getVersion();
 				val = (double)rs.getValue().getValue();
 				rscode = tairManager.put(namespace, key, value+val,version);
+				
 			}
 			//LOG.info("panzha:putPayTair "+key+" "+value+" update suceess in tair"+rscode.toString());
+		}
 		}
 	}
   /*  public void addTradAmountToTair(PaymentStream payStream){

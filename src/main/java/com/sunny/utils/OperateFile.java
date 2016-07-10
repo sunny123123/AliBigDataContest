@@ -13,8 +13,8 @@ import com.alibaba.middleware.race.RaceConfig;
 public class OperateFile {
 	//private static BufferedReader br = null;
 	private static BufferedWriter bw = null;
-	//private static final String dir = "/BBBB/jstorm-2.1.1/logs/"+RaceConfig.JstormTopologyName+"/";
-	private static final String dir = "./"+RaceConfig.JstormTopologyName+"/";
+	private static final String dir = "/BBBB/jstorm-2.1.1/logs/"+RaceConfig.JstormTopologyName+"/";
+	//private static final String dir = "./"+RaceConfig.JstormTopologyName+"/";
 	public static synchronized BufferedWriter getWriter(String fileName){
 		
 			File file = new File(dir+fileName);

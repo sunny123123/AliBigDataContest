@@ -54,8 +54,10 @@ public class RacePayBolt implements IRichBolt{
 		
 		Object obj = input.getValue(0);
 		PaymentStream payStream = (PaymentStream)obj;
-		this.collector.emit(new Values(payStream.getOrderId(),payStream));
-		this.collector.ack(input);
+		//if(payStream.getOrderId()!=-1111L){
+			this.collector.emit(new Values(payStream.getOrderId(),payStream));
+			this.collector.ack(input);
+		//}
 		
 	}
 	/*add tamll and taobao trade amount to tair*/
