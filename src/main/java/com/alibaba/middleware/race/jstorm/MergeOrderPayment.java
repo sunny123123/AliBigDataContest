@@ -10,6 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.slf4j.Logger;
@@ -43,9 +44,12 @@ public class MergeOrderPayment implements IRichBolt {
 	BufferedWriter rsLog = null;
 	BufferedWriter totalLog = null;
 	BufferedWriter totalLog_test = null;
+	
 	ConcurrentHashMap<String, Double> payRs = new ConcurrentHashMap<String, Double>();
 	ConcurrentHashMap<String, Double> payRs_test = new ConcurrentHashMap<String, Double>();
 	
+	 //Lock lock = new ReentrantLock(); 
+	 private static Semaphore A = null;
 	//Map<String, Double> payRs = new HashMap<String,Double>();
 	@Override
 	public void prepare(Map stormConf, TopologyContext context,
@@ -67,6 +71,7 @@ public class MergeOrderPayment implements IRichBolt {
 					+ context.getThisTaskId()+"_totalLog_test");
 			OperateFile.writeContent(mergeLog, "merge thread start");
 		}
+		//A = new Semaphore(1); 
 		ExecutorService service = Executors.newCachedThreadPool();
 		service.submit(new QueueThread());
 		service.submit(new WriteRsToTair());
@@ -89,11 +94,14 @@ public class MergeOrderPayment implements IRichBolt {
 
 		if (input.getSourceComponent().equals("PaymentBolt")) {
 			PaymentStream payStream = (PaymentStream) record;
-			try {
-				paymentQueue.put(payStream);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+			
+			
+				try {
+					paymentQueue.put(payStream);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			
 		}
 
 		this.collector.ack(input);
@@ -173,11 +181,13 @@ public class MergeOrderPayment implements IRichBolt {
 				// OperateFile.writeToFile("put "+pay+" to queue");
 			}
 		}
-		public void writePaytoRsMap(PaymentStream pay){
+		public synchronized void writePaytoRsMap(PaymentStream pay){
+			
 			if(pay.getType().equals("TAOBAO")){
 				String preTaobao = RaceConfig.prex_taobao+pay.getCreateTime();
 				if(payRs.containsKey(preTaobao)){
 					payRs.put(preTaobao, payRs.get(preTaobao)+pay.getPayAmount());
+					
 					if(RaceConfig.LogFlag)
 						payRs_test.put(preTaobao, payRs.get(preTaobao));
 				}
@@ -221,7 +231,7 @@ public class MergeOrderPayment implements IRichBolt {
 		public void run() {
 			while(true){
 				try {
-					Thread.sleep(20*1000);
+					Thread.sleep(60*1000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}

@@ -193,11 +193,11 @@ public class RaceSendSpout implements IRichSpout,MessageListenerConcurrently{
 	                //System.out.println(RaceConfig.MqPayTopic+" Got the end signal");
 	                LOG.info(RaceConfig.MqPayTopic+" Got the end signal");
 	                
-//	                try {
-//						paymentQueue.put(new PaymentStream(-1111L, 0.0, (short)0,0L));
-//					} catch (InterruptedException e) {
-//						e.printStackTrace();
-//					}
+	         /*       try {
+						paymentQueue.put(new PaymentStream(-1111L, 0.0, (short)0,0L));
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}*/
 	                continue;
 	            }
 				 PaymentMessage pay = RaceUtils.readKryoObject(PaymentMessage.class, body);
